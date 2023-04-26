@@ -1,0 +1,680 @@
+@font-face{
+    font-family: 'Poppins';
+    src: local('Poppins'),
+      url('/fonts/Poppins-Regular.ttf')
+
+}
+
+$dsp: flex;
+$fd: column;
+$ai: flex-start;
+$popins: 'Poppins';
+$bshd: 0px 0px 40px rgba(0, 0, 0, 0.1);
+$bold: 700;
+$standart: 500;
+$lh: 150%;
+
+
+body{
+  font-family: $popins;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+
+/* greeds */
+.column{
+    display: $dsp;
+    flex-direction: $fd;
+    gap: 16px;
+}
+.row{
+    display: $dsp;
+    flex-direction: row;
+    gap: 16px;
+}
+
+/* Colors*/
+$standart-color:#2F1160;
+$active-color: #6200ff;
+$border-color: #B9B7BD;
+$active-bg: #FBFAFC;
+$ebe-bg: #EBE9F0;
+
+.colors__wrap{
+   display: $dsp;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 24px;
+}
+.rectangle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.standart-color{
+    background: $standart-color;
+}
+.active-color{
+    background: $active-color;
+}
+.border-color {
+    background: $border-color;
+}
+.ebe-bg {
+    background: $ebe-bg;
+}
+.active-bg {
+    background: $active-bg;
+}
+
+/* Typography */
+h1{
+   font-size: 54px;
+  
+}
+h2{
+   font-size: 40px;
+}
+h3{
+    font-size: 32px;
+    line-height: 46px;
+}
+h4{
+    font-size: 25px;
+    line-height: 38px;
+}
+.subheading-first {
+   font-weight: 400;
+   font-size: 53px;
+   line-height: 120%;
+}
+.subheading-second {
+   font-weight: 400;
+   font-size: 39px;
+}
+.subheading-third {
+    font-weight: 400;
+    font-size: 32px;
+}
+.subheading-four {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+}
+.body-text {
+    font-weight: $bold;
+    font-size: 25px;
+    line-height: 38px;
+}
+.text-body {
+    font-weight: $standart;
+    font-size: 18px;
+    line-height: 28px;
+}
+.body-bold {
+    font-family: $popins;
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+.text-small, .text-label{
+    font-family: $popins;
+    font-weight: $standart;
+    font-size: 16px;
+    line-height: $lh;
+}
+.small-bold {
+    font-family: $popins;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: $lh;
+}
+.text-micro {
+    font-weight: $standart;
+    font-size: 14px;
+    line-height: $lh;
+}
+.micro_bold {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: $lh;
+}
+
+
+/*  Navigations  */
+.header, .content{
+    display: $dsp;
+    flex-direction: column;
+    align-items: $ai;
+    padding: 80px;
+    gap: 50px;
+    color: $standart-color;
+}
+.title-page{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 100%;
+}
+.dashed__wrap{
+    padding: 16px;
+    margin-top: 16px;
+    border: 2px dashed $standart-color;
+    border-radius: 5px;
+}
+.navbar-top {
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: $ai;
+}
+
+.navbar-top__wrap {
+    padding: 0px;
+    display: $dsp;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 375px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: $bshd; 
+}
+.navbar-top__link {
+    width: 40px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px; 
+    text-align: center;
+}
+
+/* Bradcrumbs */
+.breadcrumb__wrap {
+    display: $dsp;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px; 
+}
+.breadcrumb__link {
+    display: $dsp;
+    flex-direction: row;
+    align-items: center; 
+}
+.bredcrumb__label {
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: $lh;
+    display: $dsp;
+    align-items: center;
+    color: $standart-color;
+}
+.breadcrumb__link_active .bredcrumb__label{
+    color: $active-color;
+}
+.breadcrumb__link_active .material-icons{
+    color: $active-color;
+}
+
+/* Horisontal nav */
+
+.nav-item__wrap {
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border-top: 2px solid $border-color;
+}
+.nav-item__wrap_bottom {
+    border-top: none;
+    border-bottom: 2px solid $border-color;
+}
+.nav-item__wrap_active{
+    color: $active-color;
+    border-top: 2px solid $active-color;
+}
+.nav-item__wrap_active-bottom {
+    color: $active-color;
+    border-bottom: 2px solid $active-color;
+}
+
+
+.horisontal {
+   box-sizing: border-box;
+}
+.horisontal__wrap {
+    display: $dsp;
+    flex-direction: row;
+    justify-content: start;
+   
+}
+.horisontal__item {
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100px;
+    border-top: 3px solid $border-color;
+   
+}
+.horisontal__item:hover{
+    background: $active-bg;
+    color: $active-color;
+}
+
+.horisontal__item_active{
+    color: $active-color;
+    border-top: 3px solid $active-color;
+}
+.horisontal__item_active:hover{
+    background: $active-color;
+    border-top: 3px solid $active-color;
+    color: #FFFFFF;
+    transition: all .5s ease-in;
+}
+
+/* Tabs */
+.tab-items {
+   box-sizing: border-box;
+   display: $dsp;
+   flex-direction: row;
+   gap: 16px;
+}
+.tab__single {
+   display: $dsp;
+   flex-direction: $fd;
+   justify-content: center;
+   align-items: center;
+   width: 110px;
+   height: 48px;
+   border-bottom: 3px solid $border-color;
+}
+.tab__single_top {
+   border-bottom: none;
+   border-top: 3px solid $border-color;
+}
+.tab__single_active {
+   border-color: $active-color;
+   color: $active-color;
+}
+.tab__label {
+   font-family: $popins;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.tabs__wrap {
+    display: $dsp;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    box-shadow: $bshd;
+}
+.tabs__item {
+    display: $dsp;
+    flex-direction: $fd;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 45px;
+    border-bottom: 3px solid $border-color;
+}
+.tabs__item_active {
+    border-color: $active-color;
+    color: $active-color;
+    background: $active-bg;
+}
+
+.side {
+    box-sizing: border-box;
+}
+.side__wrap {
+    display: $dsp;
+    flex-direction: row;  
+    gap: 16px;
+}
+.side__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 48px;
+}
+.side__item {
+   border-right: 3px solid $border-color; 
+}
+.side__item_left {
+   border-left: 3px solid $border-color;
+   border-right: none;
+}
+.side__item_active{
+   border-color: $active-color;
+   color: $active-color;
+   background: $active-bg;
+}
+
+/* Sidenav  */
+.sidenav {
+   box-sizing: border-box;
+   box-shadow: $bshd;
+}
+.sidenav__wrap {
+    display: $dsp;
+    flex-direction: $fd;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sidenav__item {
+    display: $dsp;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 48px;
+    border-right: 3px solid $border-color;
+}
+.sidenav__item_active {
+    border-color: $active-color;
+    color: $active-color;
+    background-color: $active-bg;
+}
+
+/* Buttons */
+.btn{
+    display: $dsp;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    gap: 10px; 
+    border: 3px solid $border-color;
+    border-radius: 4px;
+    height: 48px; 
+}
+.primary{
+    background: $standart-color;
+    color: #FFFFFF; 
+    border-color: $standart-color;
+}
+.primary:hover{
+    background: $active-bg;
+    color: $standart-color;
+    transition: all .3s ease-in;
+}
+.primary:focus{
+    background: $active-color;
+    color: $active-bg;
+    border-color: $active-color;
+}
+.primary-disabled{
+    background: $active-bg;
+    color: $border-color;
+    border-color: $active-bg;
+    cursor: wait;
+}
+.primary-disabled:hover{
+    background: $ebe-bg;
+    color: $active-bg;
+    border-color: $ebe-bg;
+}
+.primary-disabled:focus{
+    background: $border-color;
+    color: $active-bg;
+    border-color: $border-color;
+}
+
+/* Secondary */
+.secondary{
+    background: #FFFFFF;
+    border: 3px solid $standart-color;
+    color: $standart-color; 
+}
+.secondary:hover{
+    background: $standart-color;
+    color: #FFFFFF;
+    transition: all .3s ease-in;
+}
+.secondary:focus{
+    background: $active-color;
+    border-color: $active-color;
+    color: #FFFFFF;
+}
+.secondary-disabled{
+    border-color: $border-color;
+    color: $border-color;
+}
+.secondary-disabled:hover{
+    background: $border-color;
+    color: #FFFFFF;
+    cursor: wait;
+    transition: all .3s ease-out;
+}
+.secondary-disabled:focus{
+    background: $ebe-bg;
+    border-color: $ebe-bg;
+}
+/* Tertiary */
+.tertiary{
+    background: #FFFFFF;
+    color: $standart-color;
+    border-color: #FFFFFF; 
+}
+.tertiary:hover{
+    border-color: $standart-color;
+    transition: all .3s ease-in;
+}
+.tertiary:focus{
+    background: $standart-color;
+    color: #FFFFFF;
+}
+.tertiary-disabled{
+    background: #FFFFFF;
+    color: $border-color;
+    border-color: #FFFFFF;
+}
+.tertiary-disabled:hover{
+    border-color: $border-color;
+
+    transition: all .3s ease-in;
+    cursor: wait;
+}
+.tertiary-disabled:focus{
+    background: $border-color;
+    color: #FFFFFF;
+}
+/* Round */
+.btn-round{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid $border-color;
+    border-radius: 999px;
+    height: 48px;
+    width: 48px;
+}
+.btn-round .material-icons{
+    font-weight: 900;
+    line-height: 28px;
+}
+.round-primary{
+    background: $standart-color;
+    color: #FFFFFF; 
+    border-color: $standart-color;
+}
+.round-secondary {
+    background-color: #FBFAFC;
+    border-color: $standart-color;
+}
+.round-tretiary {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    color: $standart-color;
+}
+.round-primary_disabled{
+    background: $active-bg;
+    color: $border-color;
+    border-color: #FFFFFF;
+}
+.round-secondary_disabled{
+    background: #FFFFFF;
+    color: $border-color;
+    border-color: $border-color;
+}
+.round-tretiary_disabled{
+    background: #FFFFFF;
+    color: $border-color;
+    border-color: #FFFFFF;
+}
+/* Button group */
+.btn-left{
+    border-radius: 4px 0 0 4px;
+}
+.btn-middle{
+    border-radius: 0;
+}
+.btn-right{
+    border-radius: 0 4px 4px 0;
+}
+.btn-group .btn{
+    width: 100%;
+}
+.btn-group__wrap {
+    display: $dsp;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    width: 500px;
+}
+
+/* Inputs */
+@mixin input{ 
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: $standart;
+    line-height: 28px;
+    color: $standart-color;
+    background: #FFFFFF;
+    border: 1px solid $standart-color;
+    border-radius: 4px; 
+}
+@mixin input-bottom{
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: $standart;
+    color: $standart-color;
+    border: 2px solid transparent;
+    border-bottom: 2px solid $standart-color;
+}
+.input-field__input {
+    height: 48px;
+    @include input;
+    padding-left: 16px;
+}
+@mixin rowfs{
+    display: $dsp;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+.input-field__label {
+    padding: 0;
+    background: #FFFFFF;
+    @include rowfs;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 16px;
+    color: $standart-color;
+}
+.input-field__input:disabled, .input-field__label_disabled{
+    color: $border-color;
+}
+.input-field__input:focus .input-field__label{
+    color: $active-color;
+    transition: all 0.3s ease-in;
+}
+/* Textarea */
+.input-field__textarea{
+    height: 120px;
+    width: 295px;
+    @include input;
+    padding: 11px 16px;
+}
+@mixin disabled{
+    color: $border-color;
+    border-color: $border-color;
+}
+.input-field__textarea::placeholder{
+    color: $standart-color;
+}
+
+.input-field__textarea:disabled{
+    @include disabled;
+}
+.input-field__textarea:disabled::placeholder{
+    @include disabled;
+}
+/* Select */
+@mixin sizeparam{
+    width: 295px;
+    height: 50px;
+}
+.input-field__select {
+    @include sizeparam;
+    @include input;
+    padding-left: 16px;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+   
+}
+.input-field__icon {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 12px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18px;
+}
+.input-field__option {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: $bold;
+    line-height: inherit;
+}
+.input-field__date {
+   width: 280px;
+   height: 50px;
+   @include input;
+   padding-left: 16px;
+}
+.input-field__date::-webkit-calendar-picker-indicator {
+   font-size: 18px;
+   font-family: inherit;
+   padding-right: 16px;
+}
+
+.input-field__numerick {
+   @include sizeparam;
+   @include input;
+   padding: 0 16px 0 16px;
+}
+.input-field__numerick:disabled{
+    @include disabled;
+}
