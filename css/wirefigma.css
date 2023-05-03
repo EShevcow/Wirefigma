@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url("/fonts/Poppins-Regular.ttf");
+  src: local("Poppins"), url("../fonts/Poppins-Regular.ttf");
 }
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
@@ -620,15 +620,16 @@ h4 {
 }
 
 /* Inputs */
+/* Input Botoom */
 .input-field__input {
   height: 48px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #2F1160;
+  color: currentColor;
   background: #FFFFFF;
-  border: 1px solid #2F1160;
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding-left: 16px;
 }
@@ -644,6 +645,10 @@ h4 {
   margin-top: -10px;
   margin-left: 16px;
   color: #2F1160;
+}
+
+.label-disabled {
+  color: #B9B7BD;
 }
 
 .input-field__input:disabled, .input-field__label_disabled {
@@ -663,9 +668,9 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #2F1160;
+  color: currentColor;
   background: #FFFFFF;
-  border: 1px solid #2F1160;
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding: 11px 16px;
 }
@@ -701,9 +706,9 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #2F1160;
+  color: currentColor;
   background: #FFFFFF;
-  border: 1px solid #2F1160;
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding-left: 16px;
   word-spacing: inherit;
@@ -735,9 +740,9 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #2F1160;
+  color: currentColor;
   background: #FFFFFF;
-  border: 1px solid #2F1160;
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding-left: 16px;
 }
@@ -755,9 +760,9 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #2F1160;
+  color: currentColor;
   background: #FFFFFF;
-  border: 1px solid #2F1160;
+  border: 1px solid currentColor;
   border-radius: 4px;
   padding: 0 16px 0 16px;
 }
@@ -765,4 +770,232 @@ h4 {
 .input-field__numerick:disabled {
   color: #B9B7BD;
   border-color: #B9B7BD;
+}
+
+/* Search Button */
+.input-field__search {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: currentColor;
+  background: #FFFFFF;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 295px;
+  height: 50px;
+  padding-left: 48px;
+  padding-right: 16px;
+}
+
+.input-field__search:disabled {
+  color: #B9B7BD;
+  border-color: #B9B7BD;
+}
+
+.input-field__search-icon {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 18px;
+  color: #B9B7BD;
+}
+
+/* Radio Buttons */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.form-control {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1em;
+}
+
+input[type=radio] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  font: inherit;
+  color: currentColor;
+  width: 30px;
+  height: 30px;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 300ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+
+input[type=radio]:disabled {
+  color: #B9B7BD;
+}
+
+input[type=radio]:disabled::before {
+  background-color: #B9B7BD;
+}
+
+/* Checkboxes */
+input[type=checkbox] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 30px;
+  height: 30px;
+  border: 3px solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].square__check::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type=checkbox].standart__check::before {
+  content: " ";
+  width: 14px;
+  height: 14px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: #2F1160;
+  transform-origin: bottom left;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:disabled {
+  border-color: #B9B7BD;
+}
+
+input[type=checkbox].square__check:disabled:before {
+  background: #B9B7BD;
+}
+
+input[type=checkbox].standart__check:disabled:before {
+  background: #B9B7BD;
+}
+
+/* Switches */
+.checkbox-ios {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 10px;
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: grid;
+  grid-template-columns: 2em auto;
+  gap: 2em;
+}
+
+.checkbox-ios .checkbox-ios-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 30px;
+  border: 3px solid currentColor;
+  border-radius: 99px;
+  background: #FFFFFF;
+  transition: 0.2s;
+}
+
+.checkbox-ios .checkbox-ios-switch:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 99px;
+  background: #2F1160;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.15s;
+}
+
+.checkbox-ios input[type=checkbox] {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox-ios input[type=checkbox]:not(:disabled):active + .checkbox-ios-switch:before {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
+  background: #FBFAFC;
+}
+
+.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
+  transform: translateX(20px);
+}
+
+/* Disabled */
+input[type=checkbox]:disabled + .checkbox-ios-switch {
+  border-color: #B9B7BD;
+}
+
+input[type=checkbox]:disabled + .checkbox-ios-switch:before {
+  background: #B9B7BD;
 }/*# sourceMappingURL=wirefigma.css.map */
