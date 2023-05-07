@@ -14,6 +14,11 @@ $bold: 700;
 $standart: 500;
 $lh: 150%;
 
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
 
 body{
   font-family: $popins, Arial, Helvetica, sans-serif;
@@ -117,8 +122,8 @@ h4{
     font-size: 18px;
     line-height: 28px;
 }
-.body-bold {
-    font-family: $popins;
+.body-bold, .label-bold {
+    font-family: inherit;
     font-weight: $bold;
     font-size: 18px;
     line-height: 28px;
@@ -593,6 +598,12 @@ h4{
     align-items: flex-start;
     gap: 10px;
 }
+@mixin rowce{
+    display: $dsp;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 .input-field__label {
     padding: 0;
     background: #FFFFFF;
@@ -703,11 +714,6 @@ h4{
     color: $border-color;
 }
 /* Radio Buttons */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 .form-control {
     font-family: inherit;
     font-size: 18px;
@@ -873,3 +879,178 @@ input[type=checkbox]:disabled + .checkbox-ios-switch:before {
 	background: $border-color;
 }
 
+/* Tables */
+tr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+td, th{
+    width: 180px;
+    display: $dsp;
+    flex-direction: row;
+    padding: 13px 16px;
+    gap: 8px;
+    font-weight: $standart;
+    font-size: 16px;
+    line-height: $lh;
+}
+th{
+    color: $border-color;
+    background: #FFFFFF;
+}
+.striped tr:nth-child(odd){
+    background-color: $active-bg;
+}
+
+/* Main  Miscellaneus */
+.large-icon{
+    font-size: 48px;
+    line-height: 55px;
+}
+.icon-avatar{
+    display: $dsp;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: $active-bg;
+    border-radius: 999px;
+}
+.dropdown__menu{
+    display: $dsp;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: $bshd;
+}
+.dropdown__item{
+    @include rowce;
+    height: 48px;
+    padding: 0;
+}
+.list-menu{
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: $ai;
+    padding: 0;
+    gap: 16px;
+}
+.list-menu__element{
+    @include rowce;
+}
+.list-menu__frame{
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: $ai;
+    width: 235px;
+}
+.list-menu__frame_long{
+    @include sizeparam;
+}
+/* Pagination */
+@mixin frow{
+    display: $dsp;
+    flex-direction: row;
+    align-items: center; 
+}
+.paging{
+    @include frow;
+    gap: 2px;
+}
+.paging__frame{
+    @include frow;
+    gap: 2px;
+}
+.paging__item{
+    @include frow;
+    justify-content: space-around;
+    padding: 0px 16px;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    box-shadow: $bshd;
+    border-radius: 4px;
+}
+.paging__item:hover{
+    background: $active-bg;
+}
+.paging__item_active{
+    background: $standart-color;
+    color: #FFFFFF;
+}
+.paging__item_active:hover{
+    background: $active-color;
+}
+.paging-icon{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+/* Tooltip */
+.tooltip__wrap{
+    @include frow;
+    justify-content: space-around;
+    width: auto;
+    height: 47px;
+    padding: 0px 16px 0px 16px;
+    border: 3px solid $standart-color;
+    border-radius: 24px;
+}
+.tooltip-top, .tooltip-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tooltip-bottom .tooltip__wrap{
+    margin-bottom: 15px;
+}
+.tooltip-bottom .rect{
+    position: relative;
+    margin-bottom: -8px;
+}
+.tooltip-left, .tooltip-right{
+   @include frow;
+}
+.tooltip-left .rect{
+    position: relative;
+    margin-left: -3px;
+}
+.tooltip-right .rect{
+    position: relative;
+    margin-right: -3px;
+}
+.tooltip-top .tooltip__wrap{
+    margin-top: 15px;
+}
+.tooltip-top .rect{
+    position: relative;
+    margin-top: -10px;
+}
+
+
+/* Annotations */
+@mixin annot{
+    background: #FFFDA1;
+    box-shadow: 3px 3px 0px $standart-color;
+    text-align: center;
+}
+.sticky-note__wrap{
+    width: 170px;
+    min-height: 170px;
+    @include frow;
+    @include annot;
+}
+.callout{
+    width: 40px;
+    height: 40px;
+    @include annot;
+    display: $dsp;
+    flex-direction: $fd;
+    justify-content: space-around;
+    border-radius: 999px;
+}

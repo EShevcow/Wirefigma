@@ -2,6 +2,12 @@
   font-family: "Poppins";
   src: local("Poppins"), url("../fonts/Poppins-Regular.ttf");
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -116,8 +122,8 @@ h4 {
   line-height: 28px;
 }
 
-.body-bold {
-  font-family: "Poppins";
+.body-bold, .label-bold {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -804,12 +810,6 @@ h4 {
 }
 
 /* Radio Buttons */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 .form-control {
   font-family: inherit;
   font-size: 18px;
@@ -998,4 +998,219 @@ input[type=checkbox]:disabled + .checkbox-ios-switch {
 
 input[type=checkbox]:disabled + .checkbox-ios-switch:before {
   background: #B9B7BD;
+}
+
+/* Tables */
+tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+td, th {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  padding: 13px 16px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+th {
+  color: #B9B7BD;
+  background: #FFFFFF;
+}
+
+.striped tr:nth-child(odd) {
+  background-color: #FBFAFC;
+}
+
+/* Main  Miscellaneus */
+.large-icon {
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.icon-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: #FBFAFC;
+  border-radius: 999px;
+}
+
+.dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+}
+
+.list-menu__element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-menu__frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 235px;
+}
+
+.list-menu__frame_long {
+  width: 295px;
+  height: 50px;
+}
+
+/* Pagination */
+.paging {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+
+.paging__frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+
+.paging__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 16px;
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.paging__item:hover {
+  background: #FBFAFC;
+}
+
+.paging__item_active {
+  background: #2F1160;
+  color: #FFFFFF;
+}
+
+.paging__item_active:hover {
+  background: #6200ff;
+}
+
+.paging-icon {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* Tooltip */
+.tooltip__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 47px;
+  padding: 0px 16px 0px 16px;
+  border: 3px solid #2F1160;
+  border-radius: 24px;
+}
+
+.tooltip-top, .tooltip-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltip-bottom .tooltip__wrap {
+  margin-bottom: 15px;
+}
+
+.tooltip-bottom .rect {
+  position: relative;
+  margin-bottom: -8px;
+}
+
+.tooltip-left, .tooltip-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tooltip-left .rect {
+  position: relative;
+  margin-left: -3px;
+}
+
+.tooltip-right .rect {
+  position: relative;
+  margin-right: -3px;
+}
+
+.tooltip-top .tooltip__wrap {
+  margin-top: 15px;
+}
+
+.tooltip-top .rect {
+  position: relative;
+  margin-top: -10px;
+}
+
+/* Annotations */
+.sticky-note__wrap {
+  width: 170px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #FFFDA1;
+  box-shadow: 3px 3px 0px #2F1160;
+  text-align: center;
+}
+
+.callout {
+  width: 40px;
+  height: 40px;
+  background: #FFFDA1;
+  box-shadow: 3px 3px 0px #2F1160;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 999px;
 }/*# sourceMappingURL=wirefigma.css.map */
