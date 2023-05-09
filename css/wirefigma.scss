@@ -1031,7 +1031,93 @@ th{
     position: relative;
     margin-top: -10px;
 }
+/* Card */
+@mixin card{
+    box-shadow: $bshd;
+    border-radius: 5px;
+}
+.card-vertical{
+    @include card;
+  
+}
+@mixin fcolfs {
+    display: $dsp;
+    flex-direction: $fd;
+    align-items: $ai;
+}
 
+.card__wrap{
+    padding: 20px;
+    gap: 20px;
+}
+.card-vertical .card__wrap{
+    @include fcolfs;
+}
+.card__image{
+    height: 255px;
+    width: 100%;
+    background: $active-bg;
+    border-radius: 5px;
+    @include frow;
+    justify-content: center;
+}
+.card__image img{
+    width: 100%;
+}
+.card__image-icon{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 74px;
+}
+.card__text-block{
+    @include fcolfs;
+    padding: 0;
+    gap: 20px;
+}
+.card__action{
+    @include frow;
+    padding: 0;
+    gap: 20px;
+}
+.card-horizontal{
+    @include card;
+}
+.card-horizontal .card__wrap{
+    display: $dsp;
+    flex-direction: row;
+    align-items: $ai;
+}
+.card-horizontal .card__image{
+    width: 165px;
+    height: 165px;
+}
+.pill{
+    @include frow;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 10px;
+    width: baseline;
+    background: $standart-color;
+    border-radius: 99px;
+    color: #FFFFFF;
+}
+.notif-block{
+    box-shadow: $bshd;
+    border-radius: 5px;
+}
+.notif-block__wrap{
+    @include frow;
+    justify-content: space-between;
+    padding: 16px 32px;
+    gap: 32px;
+    height: 80px;
+}
+/* Accordion */
+.accords{
+    @include fcolfs;
+    padding: 20px;
+    gap: 20px;
+}
 
 /* Annotations */
 @mixin annot{
