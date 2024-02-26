@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar */
+.brand-logo {
+  padding-left: 16px;
+  text-transform: uppercase;
+  color: #2F1160;
+}
+
+.navbar {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+ul.navbar__menu li {
+  display: inline-block;
+  position: relative;
+}
+ul.navbar__menu li a {
+  display: block;
+  padding: 20px 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+ul.navbar__menu li ul.dropdown {
+  position: absolute;
+  z-index: 9;
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.navbar__menu li a:hover {
+  background: #2F1160;
+  color: #FFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.navbar__menu ul.dropdown {
+  background: #FFF;
+}
+ul.navbar__menu ul.dropdown li {
+  display: block;
+}
+ul.navbar__menu li:hover ul.dropdown {
+  display: block;
+}
+
+/* Flex & Grids */
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.container {
+  display: grid;
+  padding: 30px 0;
+}
+
+.col-2 {
+  display: inherit;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.col-3 {
+  display: inherit;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.col-4 {
+  display: inherit;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .col-2, .col-3, .col-4 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

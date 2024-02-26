@@ -1,0 +1,55 @@
+@import "_variables.scss";
+
+/* Navbar */
+.brand-logo{
+    padding-left: 16px;
+    text-transform: uppercase;
+    color: $standart-color;
+}
+.navbar{
+    box-shadow: $bshd;
+}
+.navbar__wrap{
+    display: $dsp;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+ul.navbar__menu {
+    & li{
+    display: inline-block;
+    position: relative;
+    & a{
+    display: block;
+    padding: 20px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    & ul.dropdown {  
+    position: absolute;
+    z-index: 9;
+    display: none;
+    transition: all 0.3s;
+    }
+    & a:hover{
+    background: $standart-color;
+    color: #FFF;
+    transition: all 0.3s;
+    }  
+    }
+    & ul.dropdown {
+         background: #FFF;
+
+       & li {
+          display: block;
+       }
+    }
+    & li:hover {
+        & ul.dropdown {
+    display: block;
+        }
+    }
+  
+}
+
+// Breadcrumbs 
