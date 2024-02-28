@@ -380,7 +380,8 @@ ul.navbar__menu li:hover ul.dropdown {
 
 .container {
   display: grid;
-  padding: 30px 0;
+  padding: 15px 20px;
+  gap: 10px;
 }
 
 .col-2 {
@@ -406,4 +407,91 @@ ul.navbar__menu li:hover ul.dropdown {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+}
+/* Tooltips */
+.tooltip-top, .tooltip-right, .tooltip-left, .tooltip-bottom {
+  position: relative;
+}
+
+.tooltip-top::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 10;
+  color: #FFF;
+  background: rgba(47, 17, 96, 0.9);
+  padding: 10px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.tooltip-top:hover::before {
+  opacity: 1;
+}
+
+.tooltip-right::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 10;
+  color: #FFF;
+  background: rgba(47, 17, 96, 0.9);
+  padding: 10px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 5px;
+  left: 55px;
+}
+
+.tooltip-right:hover::after {
+  opacity: 1;
+}
+
+.tooltip-left::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 10;
+  color: #FFF;
+  background: rgba(47, 17, 96, 0.9);
+  padding: 10px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 10px;
+  right: 90px;
+}
+
+.tooltip-left:hover::before {
+  opacity: 1;
+}
+
+.tooltip-bottom::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 10;
+  color: #FFF;
+  background: rgba(47, 17, 96, 0.9);
+  padding: 10px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 70px;
+  left: 0;
+}
+
+.tooltip-bottom:hover::after {
+  opacity: 1;
 }

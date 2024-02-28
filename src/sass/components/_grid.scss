@@ -11,7 +11,8 @@
 }
 .container{
     display: grid;
-    padding: 30px 0;
+    padding: 15px 20px;
+    gap: 10px;
 }
 .col-2{
     display: inherit;
@@ -28,6 +29,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
 @media screen and (max-width: 760px){
 	.col-2, .col-3, .col-4 {
         grid-template-columns: 1fr;

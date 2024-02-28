@@ -8,7 +8,7 @@ $(document).ready(function(){
   });
 });
 
-// Scrollspy
+/* Scrollspy
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 });
@@ -20,6 +20,7 @@ $(document).ready(function(){
   $('.dont').css("transform","translateX(0px)");
   $('.index .btn').css("transform","translateY(0px)");
 });
+*/
 
 // Modal Open
 $('.modal-trigger').click(function(){
@@ -30,3 +31,15 @@ $('.modal-trigger').click(function(){
 $('.modal-close').click(function() {
    $('.modal').slideToggle();
 });
+
+// 
+setInterval(function(){
+  let w = window.innerWidth;
+  if (w < 960 && w > 540) {
+    $('.sidenav__item').addClass('tooltip-right');
+  }
+  else{
+    $('.sidenav__item').removeClass('tooltip-right');
+  }
+}, 500);
+

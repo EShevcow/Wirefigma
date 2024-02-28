@@ -6,25 +6,72 @@
     <title>Wirefigma Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="column">
-        <div class="sidenav">
-            <div class="sidenav__wrap">
-                <a href="#" class="sidenav__item sidenav__item_active">
-                    <span class="text-label">Active</span>
-                </a>
-                <a href="#" class="sidenav__item">
-                    <span class="text-label">Inactive</span>
-                </a>
-                <a href="#" class="sidenav__item">
-                    <span class="text-label">Inactive</span>
-                </a>
-                <a href="#" class="sidenav__item">
-                    <span class="text-label">Inactive</span>
-                </a>
-            </div>
+    <nav class="navbar"> 
+        <div class="navbar__wrap">   
+        <a href="#" class="brand-logo">Wirefigma</a>
+        <ul class="navbar__menu">
+            <li>
+                <a href="#">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Grids</a>
+            </li>
+            <li>
+                <a href="#">Цвета</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li>
+        </ul>
+        </div> 
+    </nav> 
+    <main class="content">
+         
+        <div class="column">
+            <div class="sidenav">
+                <div class="sidenav__wrap">
+                    <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Connect">
+                     <i class="large material-icons">device_hub</i>  
+                     <span class="text-label">Подключение</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Navigation">
+                     <i class="large material-icons">navigation</i>     
+                     <span class="text-label">Навигация</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Tables">
+                     <i class="large material-icons">grid_on</i>     
+                     <span class="text-label">Таблицы</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Buttons">
+                     <i class="large material-icons">send</i>    
+                     <span class="text-label">Кнопки</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Inputs">
+                     <i class="large material-icons">check_box</i>    
+                     <span class="text-label">Элементы формы</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Notiifications">
+                      <i class="large material-icons">notifications</i>    
+                      <span class="text-label">Уведомления</span>
+                    </a>
+                    <a href="#" class="sidenav__item" data-tooltip="Cards">
+                      <i class="large material-icons">contact_mail</i>    
+                      <span class="text-label">Карточки</span>
+                    </a>
+                </div>
+            </div>  
         </div>  
-    </div>
+          
+        <div class="rectangle standart-color"></div>     
+              
+    </main>
+    <footer>
+      
+    </footer> 
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

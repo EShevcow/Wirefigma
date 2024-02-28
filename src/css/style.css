@@ -1,0 +1,41 @@
+.rectangle {
+  height: 100px;
+}
+
+.standart-color {
+  background: #2F1160;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 15px;
+  padding: 20px;
+}
+
+.sidenav__item .material-icons {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    grid-template-columns: 50px auto;
+  }
+  .sidenav__item .text-label {
+    display: none;
+  }
+  .sidenav__item .material-icons {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .sidenav__item .text-label {
+    display: inline-block;
+  }
+  .sidenav__item .material-icons {
+    display: none;
+  }
+}
