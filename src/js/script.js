@@ -32,14 +32,23 @@ $('.modal-close').click(function() {
    $('.modal').slideToggle();
 });
 
-// 
+// Add Or Remove Tooltips
 setInterval(function(){
   let w = window.innerWidth;
   if (w < 960 && w > 540) {
     $('.sidenav__item').addClass('tooltip-right');
   }
-  else{
+  else if(w > 960){
+    $('.navbar__toggle').slideUp();
     $('.sidenav__item').removeClass('tooltip-right');
   }
+  else{
+    $('.sidenav__item').removeClass('tooltip-right'); 
+  }
 }, 500);
+
+// Toggle Menu
+$('.navbar__burger').click(function(){
+  $('.navbar__toggle').slideToggle();
+});
 
