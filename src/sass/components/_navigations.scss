@@ -5,6 +5,9 @@
     padding-left: 16px;
     text-transform: uppercase;
     color: $standart-color;
+    & img {
+        height: 50px;
+    }
 }
 .navbar{
     box-shadow: $bshd;

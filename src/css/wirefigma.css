@@ -22,6 +22,9 @@ ul {
   text-transform: uppercase;
   color: #2F1160;
 }
+.brand-logo img {
+  height: 50px;
+}
 
 .navbar {
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
@@ -468,8 +471,8 @@ ul.navbar__menu li:hover ul.dropdown {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: 10px;
-  right: 90px;
+  top: -15px;
+  right: 100px;
 }
 
 .tooltip-left:hover::before {
@@ -488,10 +491,160 @@ ul.navbar__menu li:hover ul.dropdown {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: 70px;
+  top: 20px;
   left: 0;
 }
 
 .tooltip-bottom:hover::after {
   opacity: 1;
+}
+
+.pill {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background: #2F1160;
+  border-radius: 99px;
+  color: #FFFFFF;
+}
+
+blockquote {
+  padding: 15px 0 15px 10px;
+  border-left: 5px solid #6200ff;
+  background: #EBE9F0;
+}
+
+/* Annotations */
+.sticky-note__wrap {
+  width: auto;
+  min-height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFDA1;
+  -webkit-box-shadow: 3px 3px 0px #2F1160;
+          box-shadow: 3px 3px 0px #2F1160;
+  text-align: center;
+}
+
+.callout {
+  width: 30px;
+  height: 30px;
+  background: #FFFDA1;
+  -webkit-box-shadow: 3px 3px 0px #2F1160;
+          box-shadow: 3px 3px 0px #2F1160;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 999px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/Poppins-Regular.ttf");
+}
+/* Typography */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+
+.subheading-first {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 53px;
+}
+
+.subheading-second {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 39px;
+}
+
+.subheading-third {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.subheading-four {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.body-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text-body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.body-bold, .label-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text-small, .text-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.small-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.text-micro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.micro_bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }

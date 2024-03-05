@@ -36,8 +36,8 @@
 
 .tooltip-left::before{
     @include tooltip;
-    top: 10px;
-    right: 90px;
+    top: -15px;
+    right: 100px;
  }
  .tooltip-left:hover::before{
     opacity: 1;
@@ -45,9 +45,45 @@
  
 .tooltip-bottom::after{
     @include tooltip;
-    top: 70px;
+    top: 20px;
     left: 0;
 }
 .tooltip-bottom:hover::after{
     opacity: 1;
+}
+.pill{
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background: $standart-color;
+    border-radius: 99px;
+    color: #FFFFFF;
+}
+blockquote{
+    padding: 15px 0 15px 10px;
+    border-left: 5px solid $active-color;
+    background: $ebe-bg;
+}
+
+/* Annotations */
+@mixin annot{
+    background: #FFFDA1;
+    box-shadow: 3px 3px 0px $standart-color;
+    text-align: center;
+}
+.sticky-note__wrap{
+    width: auto;
+    min-height: 180px;
+    @include frow;
+    @include annot;
+}
+.callout{
+    width: 30px;
+    height: 30px;
+    @include annot;
+    display: $dsp;
+    flex-direction: $fd;
+    justify-content: space-around;
+    border-radius: 999px;
 }

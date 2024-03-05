@@ -1,8 +1,6 @@
 @import "components/variables.scss";
 
-.rectangle{
-    height: 100px;
-}
+
 .standart-color{
    background: $standart-color;
 }
@@ -37,55 +35,120 @@
         }
     }
 }
-.content{
+main{
     display: grid;
     grid-template-columns: 300px auto;
     gap: 15px;
     padding: 20px;
 }
-.sidenav__item{
-    & .material-icons{
-        display: none;
-    }
-    &:hover{
+header{
+    padding: 2em 0 2em 1em;
     background: $ebe-bg;
-    color: $active-color;
-    transition-duration: .5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $border-color;
+    & h1 {
+        color: #FFF;
     }
 }
-
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+aside {
+    & .sidenav__item{
+      & .material-icons{
+        display: none;
+      }
+      &:hover{
+        background: $ebe-bg;
+        color: $active-color;
+        transition-duration: .5s;
+     }
+   }
+}
+footer{
+    background: #FFF;
+    box-shadow: $bshd;
+    & .footer-content{
+         padding: 2em 0 2em 2em; 
+    }
+    & .live-int{
+        margin-left: 60%;
+    }
+    & .footer-copyright{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $ebe-bg;
+        color: $standart-color;
+    }
+}
 @media screen and (max-width: 960px){
-    .content{
+    main{
         grid-template-columns: 50px auto;
     }
-    .sidenav__item {
+    aside {
+       & .sidenav__item {
         & .text-label{
-        display: none;
+            display: none;
         }
         & .material-icons{
             display: inline-block;
         }
-    }
-    .navbar__menu{
+     }
+   }
+   .wirenav{
+    & .navbar__menu{
         display: none;
     }
-    .navbar__burger{
+    & .navbar__burger{
         display: inline;
     }
-    .navbar__wrap{
+    & .navbar__wrap{
         padding: 20px 0 20px 0;
+    }
+   }
+    
+    .ads{
+        display: none;
+    }
+    footer{
+       
+        & .live-int{
+            margin-left: 40%;
+        }
     }
 }
 @media screen and (max-width: 540px) {
-    .content{
+    main{
         grid-template-columns: 1fr;
     }
-    .sidenav__item {
+    aside {
+        & .sidenav__item {
         & .text-label{
         display: inline-block;
         }
         & .material-icons{
             display: none;
+        }
+    }
+    
+}
+
+    .ads{
+        display: block;
+    }
+    footer{
+        & .footer-content{
+          padding: 2em 0 2em;  
+          flex-direction: column;
+          align-items: center;
+        }
+        & .live-int{
+            margin-left: 0;
         }
     }
 }

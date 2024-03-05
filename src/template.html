@@ -6,24 +6,35 @@
     <title>Wirefigma Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
+    <link rel="stylesheet" href="css/prism.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header{
+            background-image: url(img/tekstura-tekstury-stil.jpg);
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar"> 
+<nav class="wirenav navbar"> 
         <div class="navbar__wrap">   
-        <a href="#" class="brand-logo">Wirefigma</a>
+        <a href="#" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+            <img src="img/Logomark.svg" alt="logo">
+        </a>
         <ul class="navbar__menu">
+            <li>
+                <a href="#">Подключение</a>
+            </li>
             <li>
                 <a href="#">Компоненты</a>
             </li>
             <li>
-                <a href="#">Grids</a>
-            </li>
-            <li>
-                <a href="#">Цвета</a>
+                <a href="#">Сетка</a>
             </li>
             <li>
                 <a href="#">скрипты</a>
+            </li>
+            <li>
+                <a href="#">шаблоны</a>
             </li>
         </ul>
         <ul class="navbar__toggle">
@@ -44,51 +55,180 @@
             <i class="large material-icons">dehaze</i>
         </a>
         </div> 
-    </nav> 
-    <main class="content">
-         
-        <div class="column">
-            <div class="sidenav">
-                <div class="sidenav__wrap">
-                    <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Connect">
-                     <i class="large material-icons">device_hub</i>  
-                     <span class="text-label">Подключение</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Navigation">
-                     <i class="large material-icons">navigation</i>     
-                     <span class="text-label">Навигация</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Tables">
-                     <i class="large material-icons">grid_on</i>     
-                     <span class="text-label">Таблицы</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Buttons">
-                     <i class="large material-icons">send</i>    
-                     <span class="text-label">Кнопки</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Inputs">
-                     <i class="large material-icons">check_box</i>    
-                     <span class="text-label">Элементы формы</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Notiifications">
-                      <i class="large material-icons">notifications</i>    
-                      <span class="text-label">Уведомления</span>
-                    </a>
-                    <a href="#" class="sidenav__item" data-tooltip="Cards">
-                      <i class="large material-icons">contact_mail</i>    
-                      <span class="text-label">Карточки</span>
-                    </a>
-                </div>
-            </div>  
+</nav> 
+
+<main>   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Connect">
+                    <i class="large material-icons">device_hub</i>  
+                    <span class="text-label">Подключение</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Навигация</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Таблицы</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Buttons">
+                    <i class="large material-icons">send</i>    
+                    <span class="text-label">Кнопки</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Inputs">
+                    <i class="large material-icons">check_box</i>    
+                    <span class="text-label">Элементы формы</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Notiifications">
+                    <i class="large material-icons">notifications</i>    
+                    <span class="text-label">Уведомления</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Карточки</span>
+                </a>
+            </div>
         </div>  
-          
-       <section></section> 
-              
-    </main>
-    <footer>
-      
-    </footer> 
+        <div class="ads">
+           
+        </div>
+    </aside>  
+        
+    <article>    
+        <header>
+            <h1>Элементы Навигации</h1>
+            <span class="text-body">
+                Навигация и пагинация
+            </span>
+        </header>
+        <section>
+            <h3>Пример навбара</h3>
+            <nav class="navbar"> 
+            <div class="navbar__wrap">   
+            <a href="#" class="brand-logo">logo</a>
+            <ul class="navbar__menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </div> 
+            </nav> 
+            
+<script type="text/plain" class="language-html">
+<nav class="navbar"> 
+    <div class="navbar__wrap">   
+    <a href="#" class="brand-logo">logo</a>
+    <ul class="navbar__menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+    </div> 
+</nav> 
+</script>
+        </section>
+    <section>
+        <h3>Tabs Side Panel</h3>
+    <div class="sidenav">
+    <div class="sidenav__wrap">
+    <a href="#" class="sidenav__item sidenav__item_active">
+        <span class="text-label">Active</span>
+    </a>
+    <a href="#" class="sidenav__item">
+        <span class="text-label">Inactive</span>
+    </a>
+    <a href="#" class="sidenav__item">
+        <span class="text-label">Inactive</span>
+    </a>
+    <a href="#" class="sidenav__item">
+        <span class="text-label">Inactive</span>
+    </a>
+    </div>
+    </div>
+    
+<script type="text/plain" class="language-html">
+<div class="sidenav">
+<div class="sidenav__wrap">
+<a href="#" class="sidenav__item sidenav__item_active">
+    <span class="text-label">Active</span>
+</a>
+<a href="#" class="sidenav__item">
+    <span class="text-label">Inactive</span>
+</a>
+<a href="#" class="sidenav__item">
+    <span class="text-label">Inactive</span>
+</a>
+<a href="#" class="sidenav__item">
+    <span class="text-label">Inactive</span>
+</a>
+</div>
+</div>  
+</script>
+    </section>
+    </article>          
+</main>
+<footer>
+    <div class="row footer-content">
+
+        <div class="column">
+            <div class="row">
+                <span class="body-bold">
+                    Designed By:
+                </span>
+                <a href="https://www.tiborlovas.com/" target="_blank" class="text-body">
+                   Tibor Lovas
+                </a>
+                <span class="emoji text-body" title="Slovakia">🇸🇰</span>
+            </div>
+            <div class="row">
+                <span class="body-bold">
+                    Development:
+                </span>
+                <a href="https://github.com/EShevcow/Wirefigma" target="_blank">
+                    <span class="text-body">Edvard Shevcow</span>
+                </a>
+                <span class="emoji text-body" title="Russia">🇷🇺</span>
+            </div>
+        </div>
+        <div class="live-int">
+            <!--LiveInternet counter-->
+            <a href="https://www.liveinternet.ru/click"
+             class="tooltip-left" data-tooltip="Live Internet Statistic"
+            target="_blank">
+            <img id="licntF358" width="88" height="31" style="border:0" 
+
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            alt="LiveintImg"/>
+            </a>
+            <script>
+            (function(d,s){d.getElementById("licntF358").src=
+            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+            (document,screen)
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div> 
+    <div class="footer-copyright">
+        <span class="text-micro">
+          &copy;  Edvard Shevcov Think Power 2023 - 2024
+        </span>
+    </div> 
+</footer> 
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
 </body>
 </html>
