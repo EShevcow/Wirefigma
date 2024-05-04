@@ -41,11 +41,18 @@
   text-transform: uppercase;
 }
 
-main {
+.main {
   display: grid;
   grid-template-columns: 300px auto;
   gap: 15px;
   padding: 20px;
+}
+.main .main-index {
+  grid-template-columns: auto;
+}
+
+.code-toolbar {
+  max-width: 800px;
 }
 
 header {
@@ -59,6 +66,31 @@ header h1 {
   color: #FFF;
 }
 
+.index-header {
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-header h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.index-section {
+  padding: 2em 0 2em 0;
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +100,15 @@ article {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
+}
+article section {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 20px 50px 30px 50px;
 }
 
 aside .sidenav__item .material-icons {
@@ -107,7 +148,7 @@ footer .footer-copyright {
 }
 
 @media screen and (max-width: 960px) {
-  main {
+  .main {
     grid-template-columns: 50px auto;
   }
   aside .sidenav__item .text-label {
@@ -133,7 +174,7 @@ footer .footer-copyright {
   }
 }
 @media screen and (max-width: 540px) {
-  main {
+  .main {
     grid-template-columns: 1fr;
   }
   aside .sidenav__item .text-label {

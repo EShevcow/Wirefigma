@@ -22,9 +22,11 @@ ul.navbar__menu {
     & li{
     display: inline-block;
     position: relative;
+    
     & a{
     display: block;
     padding: 20px 25px;
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
     }
@@ -34,7 +36,7 @@ ul.navbar__menu {
     display: none;
     transition: all 0.3s;
     }
-    & a:hover{
+    & a:hover, .active{
     background: $standart-color;
     color: #FFF;
     transition: all 0.3s;

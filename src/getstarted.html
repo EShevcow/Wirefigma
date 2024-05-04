@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Template</title>
+    <title>Подключение Wirefigma</title>
+    <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
     <link rel="stylesheet" href="css/prism.css">
@@ -22,7 +23,7 @@
         </a>
         <ul class="navbar__menu">
             <li>
-                <a href="#">Подключение</a>
+                <a href="#" class="active">Подключение</a>
             </li>
             <li>
                 <a href="#">Компоненты</a>
@@ -57,122 +58,61 @@
         </div> 
 </nav> 
 
-<main class="main">   
-    <aside class="column">
-        <div class="sidenav">
-            <div class="sidenav__wrap">
-    
-                <a href="#" class="sidenav__item" data-tooltip="Navigation">
-                    <i class="large material-icons">navigation</i>     
-                    <span class="text-label">Навигация</span>
-                </a>
-                <a href="#" class="sidenav__item" data-tooltip="Tables">
-                    <i class="large material-icons">grid_on</i>     
-                    <span class="text-label">Таблицы</span>
-                </a>
-                <a href="#" class="sidenav__item" data-tooltip="Buttons">
-                    <i class="large material-icons">send</i>    
-                    <span class="text-label">Кнопки</span>
-                </a>
-                <a href="#" class="sidenav__item" data-tooltip="Inputs">
-                    <i class="large material-icons">check_box</i>    
-                    <span class="text-label">Элементы формы</span>
-                </a>
-                <a href="#" class="sidenav__item" data-tooltip="Notiifications">
-                    <i class="large material-icons">notifications</i>    
-                    <span class="text-label">Уведомления</span>
-                </a>
-                <a href="#" class="sidenav__item" data-tooltip="Cards">
-                    <i class="large material-icons">contact_mail</i>    
-                    <span class="text-label">Карточки</span>
-                </a>
-            </div>
-        </div>  
-        <div class="ads">
-           
-        </div>
-    </aside>  
-        
+<main class="main-index">   
     <article>    
         <header>
-            <h1>Элементы Навигации</h1>
+            <h1>Как подключить стили Wirefigma</h1>
             <span class="text-body">
-                Навигация и пагинация
+               Различные способы подключения
             </span>
         </header>
         <section>
-            <h3>Пример навбара</h3>
-            <nav class="navbar"> 
-            <div class="navbar__wrap">   
-            <a href="#" class="brand-logo">logo</a>
-            <ul class="navbar__menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            </div> 
-            </nav> 
-            
+         <h3>Ссылка на Github</h3>
+           
+     <a class="btn primary" href="https://github.com/EShevcow/Wirefigma/blob/master/src/css/wirefigma.css"
+     target="_blank">
+        Wirefigma GitHub
+        <i class="material-icons">chevron_right</i>
+    </a>  
+ <blockquote>
+    <span class="small-bold">
+       Нужно скачать файл стилей в каталог 
+        <i class="material-icons">vertical_align_bottom</i>
+    </span>
+   
+</blockquote> 
+<div class="wireimage">
+    <div class="image__wrap">
+       <img src="img/2024-05-03 03-58-09.png" alt="Image">
+    </div>
+</div>              
 <script type="text/plain" class="language-html">
-<nav class="navbar"> 
-    <div class="navbar__wrap">   
-    <a href="#" class="brand-logo">logo</a>
-    <ul class="navbar__menu">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">About Us</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-    </div> 
-</nav> 
+<!-- Link Styles Local -->
+<link rel="stylesheet" href="css/wirefigma.css">
 </script>
-        </section>
-    <section>
-        <h3>Tabs Side Panel</h3>
-    <div class="sidenav">
-    <div class="sidenav__wrap">
-    <a href="#" class="sidenav__item sidenav__item_active">
-        <span class="text-label">Active</span>
-    </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
-    </div>
-    </div>
+</section>
+<section>
+<h3>Ссылка с сайта Wirefigma</h3>
+
+<script type="text/plain" class="language-html">
+<!-- Link Styles Wirefigma Global -->
+<link rel="stylesheet" href="http://wirefigma.ru/css/wirefigma.css">    
+</script>
+
+</section>
+<section>
+<h3>Базовые иконки Materialize</h3>
+<a href="https://materializecss.com/icons.html" class="btn primary" target="_blank">    
+    <span class="body-bold">Material Icons</span>
+    <i class="material-icons">chevron_right</i>
+</a>
+<script type="text/plain" class="language-html">
+<!-- Link Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+</script>
     
-<script type="text/plain" class="language-html">
-<div class="sidenav">
-<div class="sidenav__wrap">
-<a href="#" class="sidenav__item sidenav__item_active">
-    <span class="text-label">Active</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-</div>
-</div>  
-</script>
-    </section>
-    </article>          
+</section>
+</article>          
 </main>
 <footer>
     <div class="row footer-content">

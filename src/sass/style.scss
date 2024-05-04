@@ -35,11 +35,17 @@
         }
     }
 }
-main{
+.main{
     display: grid;
     grid-template-columns: 300px auto;
     gap: 15px;
     padding: 20px;
+    & .main-index{
+        grid-template-columns: auto;  
+    }
+}
+.code-toolbar{
+    max-width: 800px;
 }
 header{
     padding: 2em 0 2em 1em;
@@ -50,11 +56,32 @@ header{
     & h1 {
         color: #FFF;
     }
+
+}
+.index-header{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h1{
+        text-transform: uppercase;
+        font-size: 3em;
+    }
+}
+.index-section{
+    padding: 2em 0 2em 0;
 }
 article{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    & section{
+        display: inherit;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 50px 30px 50px;
+    }
 }
 aside {
     & .sidenav__item{
@@ -87,7 +114,7 @@ footer{
     }
 }
 @media screen and (max-width: 960px){
-    main{
+    .main{
         grid-template-columns: 50px auto;
     }
     aside {
@@ -123,7 +150,7 @@ footer{
     }
 }
 @media screen and (max-width: 540px) {
-    main{
+    .main{
         grid-template-columns: 1fr;
     }
     aside {
