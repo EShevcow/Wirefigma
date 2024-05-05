@@ -23,7 +23,7 @@ ul {
   color: #2F1160;
 }
 .brand-logo img {
-  height: 50px;
+  height: 45px;
 }
 
 .navbar {
@@ -47,10 +47,11 @@ ul {
 ul.navbar__menu li {
   display: inline-block;
   position: relative;
+  margin: -3px;
 }
 ul.navbar__menu li a {
   display: block;
-  padding: 20px 25px;
+  padding: 25px 30px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -73,6 +74,7 @@ ul.navbar__menu ul.dropdown {
 }
 ul.navbar__menu ul.dropdown li {
   display: block;
+  padding: 3px;
 }
 ul.navbar__menu li:hover ul.dropdown {
   display: block;
@@ -333,7 +335,7 @@ ul.navbar__menu li:hover ul.dropdown {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0px 16px;
+  padding: 0px;
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
@@ -537,7 +539,7 @@ tr {
 }
 
 td, th {
-  width: 180px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

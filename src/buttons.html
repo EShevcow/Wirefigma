@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirefigma Buttons</title>
+    <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wirefigma.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header{
+            background-image: url(img/tekstura-tekstury-stil.jpg);
+        }
+    </style>
+</head>
+<body>
+<nav class="wirenav navbar"> 
+        <div class="navbar__wrap">   
+        <a href="#" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+            <img src="img/Logomark.svg" alt="logo">
+        </a>
+        <ul class="navbar__menu">
+            <li>
+                <a href="getstarted.html">Подключение</a>
+            </li>
+            <li>
+                <a href="navigations.html" class="active">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Сетка</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li>
+            <li>
+                <a href="#">шаблоны</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Landing</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Panel</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar__toggle">
+            <li>
+                <a href="#">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Grids</a>
+            </li>
+            <li>
+                <a href="#">Цвета</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li> 
+        </ul>
+        <a class="navbar__burger" href="#">
+            <i class="large material-icons">dehaze</i>
+        </a>
+        </div> 
+</nav> 
+
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+    
+                <a href="navigations.html" class="sidenav__item" data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Навигация</span>
+                </a>
+                <a href="tables.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Таблицы</span>
+                </a>
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Buttons">
+                    <i class="large material-icons">send</i>    
+                    <span class="text-label">Кнопки</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Inputs">
+                    <i class="large material-icons">check_box</i>    
+                    <span class="text-label">Элементы формы</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Notiifications">
+                    <i class="large material-icons">notifications</i>    
+                    <span class="text-label">Уведомления</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Карточки</span>
+                </a>
+            </div>
+        </div>  
+        <div class="ads">
+           
+        </div>
+    </aside>  
+        
+<article>    
+<header>
+    <h1>Кнопки</h1>
+    <span class="text-body">
+        Набор кнопок
+    </span>
+</header>
+<section>
+  <h3>Первичные кнопки</h3>
+  <div class="row">
+
+    <button class="btn primary">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn primary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    
+    <button class="btn primary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn primary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    </div>
+    <script type="text/plain" class="language-html">
+    <button class="btn primary">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn primary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn primary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn primary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>       
+    </script>
+</section>
+<section>
+    <h3>Недоступные первичные кнопки</h3>
+    <div class="row">
+    
+    <button class="btn primary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn primary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn primary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn primary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button> 
+            
+    </div>           
+    <script type="text/plain" class="language-html">
+    <button class="btn primary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn primary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn primary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn primary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button> 
+    </script>
+</section> 
+<section>
+    <h3>Вторичные кнопки</h3>
+    <div class="row">
+    
+    <button class="btn secondary">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn secondary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    </div>                
+    <script type="text/plain" class="language-html">
+    <button class="btn secondary">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn secondary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>   
+    </script>  
+</section> 
+<section>
+    <h3>Недоступные вторичные кнопки</h3> 
+    <div class="row">
+    
+    <button class="btn secondary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn secondary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn secondary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button> 
+    
+    </div>
+    <script type="text/plain" class="language-html">
+    <button class="btn secondary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn secondary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn secondary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn secondary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button> 
+    </script>  
+</section> 
+<section>
+    <h3>Третичные кнопки</h3>
+<div class="row">
+    <button class="btn tertiary">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn tertiary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn tertiary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn tertiary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    </div>
+    
+    <script type="text/plain" class="language-html">
+    <button class="btn tertiary">
+    <span class="body-bold">Button</span>
+    </button> 
+
+    <button class="btn tertiary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button> 
+
+    <button class="btn tertiary">    
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+
+    <button class="btn tertiary">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    </script>  
+</section>
+<section>
+    <h3>Недоступные третичные кнопки</h3> 
+    <div class="row">
+    
+    <button class="btn tertiary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn tertiary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn tertiary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn tertiary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>     
+    
+    </div>   
+    <script type="text/plain" class="language-html">
+    <button class="btn tertiary-disabled">
+    <span class="body-bold">Button</span>
+    </button> 
+    
+    <button class="btn tertiary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    </button>
+    
+    <button class="btn tertiary-disabled">       
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>
+    
+    <button class="btn tertiary-disabled">
+    <i class="material-icons">add</i>
+    <span class="body-bold">Button</span>
+    <i class="material-icons">chevron_right</i>
+    </button>        
+    </script>  
+</section>
+<section>
+    <h3>Круглые кнопки</h3>
+<div class="row">
+
+    <button class="btn-round round-primary">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-secondary">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-tretiary">
+    <i class="material-icons">add</i> 
+    </button>
+            
+</div>       
+<script type="text/plain" class="language-html">
+    <button class="btn-round round-primary">
+    <i class="material-icons">add</i> 
+    </button>
+
+    <button class="btn-round round-secondary">
+    <i class="material-icons">add</i> 
+    </button>
+
+    <button class="btn-round round-tretiary">
+    <i class="material-icons">add</i> 
+    </button>       
+</script>  
+</section>
+<section>
+    <h3>Недоступные круглые кнопки</h3>
+    <div class="row">
+
+    <button class="btn-round round-primary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-secondary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-tretiary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+            
+    </div>       
+    <script type="text/plain" class="language-html">
+    <button class="btn-round round-primary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-secondary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+    
+    <button class="btn-round round-tretiary_disabled">
+    <i class="material-icons">add</i> 
+    </button>
+ </script>  
+</section>
+<section>
+    <h3>Групповые кнопки</h3>
+    <div class="row">
+    
+    <button class="btn btn-left primary">
+    <span class="text-body">Button</span>
+    </button>
+    
+    <button class="btn btn-middle primary">
+    <span class="text-body">Button</span>
+    </button>
+          
+    <button class="btn btn-right primary">
+    <span class="text-body">Button</span>
+    </button>
+    
+    </div>
+    <script type="text/plain" class="language-html">
+    <button class="btn btn-left primary">
+    <span class="text-body">Button</span>
+    </button>
+    
+    <button class="btn btn-middle primary">
+    <span class="text-body">Button</span>
+    </button>
+        
+    <button class="btn btn-right primary">
+    <span class="text-body">Button</span>
+    </button>
+    </script>
+</section>
+<section>
+    <h3>Недоступные групповые кнопки</h3>
+    <div class="row">
+
+        <button class="btn btn-left primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+        
+        <button class="btn btn-middle primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+            
+        <button class="btn btn-right primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+            
+        </div>
+        <script type="text/plain" class="language-html">
+        <button class="btn btn-left primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+        
+        <button class="btn btn-middle primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+            
+        <button class="btn btn-right primary-disabled">
+        <span class="text-body">Button</span>
+        </button>
+        </script>  
+</section>
+<section>
+    <h3>Пример групповых кнопок</h3>
+    <div class="btn-group column">
+        <div class="btn-group__wrap">
+            <button class="btn btn-left primary">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-right primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+        </div>
+        <div class="btn-group__wrap">
+            <button class="btn btn-left primary">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-right primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+        </div>
+        <div class="btn-group__wrap">
+            <button class="btn btn-left primary">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-right primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+        </div>
+        <div class="btn-group__wrap">
+            <button class="btn btn-left primary">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-middle primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+            <button class="btn btn-right primary-disabled">
+                <span class="text-body">Button</span>
+            </button>
+        </div>
+    </div> 
+</section>
+</article>          
+</main>
+<footer>
+    <div class="row footer-content">
+
+        <div class="column">
+            <div class="row">
+                <span class="body-bold">
+                    Designed By:
+                </span>
+                <a href="https://www.tiborlovas.com/" target="_blank" class="text-body">
+                   Tibor Lovas
+                </a>
+                <span class="emoji text-body" title="Slovakia">🇸🇰</span>
+            </div>
+            <div class="row">
+                <span class="body-bold">
+                    Development:
+                </span>
+                <a href="https://github.com/EShevcow/Wirefigma" target="_blank">
+                    <span class="text-body">Edvard Shevcow</span>
+                </a>
+                <span class="emoji text-body" title="Russia">🇷🇺</span>
+            </div>
+        </div>
+        <div class="live-int">
+            <!--LiveInternet counter-->
+            <a href="https://www.liveinternet.ru/click"
+             class="tooltip-left" data-tooltip="Live Internet Statistic"
+            target="_blank">
+            <img id="licntF358" width="88" height="31" style="border:0" 
+
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            alt="LiveintImg"/>
+            </a>
+            <script>
+            (function(d,s){d.getElementById("licntF358").src=
+            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+            (document,screen)
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div> 
+    <div class="footer-copyright">
+        <span class="text-micro">
+          &copy;  Edvard Shevcov Think Power 2023 - 2024
+        </span>
+    </div> 
+</footer> 
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>

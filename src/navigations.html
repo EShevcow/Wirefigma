@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirefigma Navigations</title>
+    <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wirefigma.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header{
+            background-image: url(img/tekstura-tekstury-stil.jpg);
+        }
+    </style>
+</head>
+<body>
+<nav class="wirenav navbar"> 
+        <div class="navbar__wrap">   
+        <a href="index.html" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+            <img src="img/Logomark.svg" alt="logo">
+        </a>
+        <ul class="navbar__menu">
+            <li>
+                <a href="getstarted.html">Подключение</a>
+            </li>
+            <li>
+                <a href="#" class="active">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Сетка</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li>
+            <li>
+                <a href="#">шаблоны</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Landing</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Panel</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar__toggle">
+            <li>
+                <a href="#">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Grids</a>
+            </li>
+            <li>
+                <a href="#">Цвета</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li> 
+        </ul>
+        <a class="navbar__burger" href="#">
+            <i class="large material-icons">dehaze</i>
+        </a>
+        </div> 
+</nav> 
+
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+    
+                <a href="navigations.html" class="sidenav__item sidenav__item_active" data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Навигация</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Таблицы</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Buttons">
+                    <i class="large material-icons">send</i>    
+                    <span class="text-label">Кнопки</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Inputs">
+                    <i class="large material-icons">check_box</i>    
+                    <span class="text-label">Элементы формы</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Notiifications">
+                    <i class="large material-icons">notifications</i>    
+                    <span class="text-label">Уведомления</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Карточки</span>
+                </a>
+            </div>
+        </div>  
+        <div class="ads">
+           
+        </div>
+    </aside>  
+        
+    <article>    
+        <header>
+            <h1>Элементы Навигации</h1>
+            <span class="text-body">
+                Навигация и пагинация
+            </span>
+        </header>
+        <section>
+            <h3>Пример навбара</h3>
+            <nav class="navbar"> 
+            <div class="navbar__wrap">   
+            <a href="#" class="brand-logo">logo</a>
+            <ul class="navbar__menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </div> 
+            </nav> 
+            
+<script type="text/plain" class="language-html">
+<nav class="navbar"> 
+    <div class="navbar__wrap">   
+    <a href="#" class="brand-logo">logo</a>
+    <ul class="navbar__menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+    </div> 
+</nav> 
+</script>
+</section>
+<section>
+   <h3>Навбар и выпадающий список</h3> 
+   <ul class="navbar__menu">
+    <li>
+        <a href="#">Home</a>
+    </li>
+    <li>
+        <a href="#">Languages &#x25BC;</a>
+         <ul class="dropdown">
+            <li>
+                <a href="#">Html</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">Javascript</a>
+            </li>
+            <li>
+                <a href="#">PHP</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+   <script type="text/plain" class="language-html">
+    <ul class="navbar__menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Languages &#x25BC;</a>
+             <ul class="dropdown">
+                <li>
+                    <a href="#">Html</a>
+                </li>
+                <li>
+                    <a href="#">CSS</a>
+                </li>
+                <li>
+                    <a href="#">Javascript</a>
+                </li>
+                <li>
+                    <a href="#">PHP</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    </script>
+</section>
+<section>
+    <h3>Breadcrumb column</h3>
+    <div class="breadcrumb">
+        <div class="column">
+            <a href="" class="breadcrumb__link">
+                <span class="bredcrumb__label">Home</span>
+                <i class="material-icons">chevron_right</i>  
+            </a>
+            <a href="#" class="breadcrumb__link breadcrumb__link_active">
+                <span class="bredcrumb__label">Home</span>
+                <i class="material-icons">chevron_right</i> 
+            </a> 
+        </div>
+      </div>
+  <script type="text/plain" class="language-html">
+    <div class="breadcrumb">
+        <div class="column">
+            <a href="" class="breadcrumb__link">
+                <span class="bredcrumb__label">Home</span>
+                <i class="material-icons">chevron_right</i>  
+            </a>
+            <a href="#" class="breadcrumb__link breadcrumb__link_active">
+                <span class="bredcrumb__label">Home</span>
+                <i class="material-icons">chevron_right</i> 
+            </a> 
+        </div>
+      </div>
+</script>   
+</section>
+<section>
+    <h3>Breadcrumb horisontal </h3>
+    <div class="breadcrumb">
+        <div class="breadcrumb__wrap">
+            <a class="breadcrumb__link" href="#">
+                <span class="bredcrumb__label">Home</span>
+                <i class="material-icons">chevron_right</i> 
+            </a>
+            <a class="breadcrumb__link" href="#">
+                <span class="bredcrumb__label">Products</span>
+                <i class="material-icons">chevron_right</i> 
+            </a>
+            <a class="breadcrumb__link" href="#">
+                <span class="bredcrumb__label">Laptop</span>
+                <i class="material-icons">chevron_right</i> 
+            </a>
+            <a class="breadcrumb__link breadcrumb__link_active" href="#">
+                <span class="bredcrumb__label">Features</span>  
+            </a>
+        </div>
+     </div>
+     <script type="text/plain" class="language-html">
+        <div class="breadcrumb">
+            <div class="breadcrumb__wrap">
+                <a class="breadcrumb__link" href="#">
+                    <span class="bredcrumb__label">Home</span>
+                    <i class="material-icons">chevron_right</i> 
+                </a>
+                <a class="breadcrumb__link" href="#">
+                    <span class="bredcrumb__label">Products</span>
+                    <i class="material-icons">chevron_right</i> 
+                </a>
+                <a class="breadcrumb__link" href="#">
+                    <span class="bredcrumb__label">Laptop</span>
+                    <i class="material-icons">chevron_right</i> 
+                </a>
+                <a class="breadcrumb__link breadcrumb__link_active" href="#">
+                    <span class="bredcrumb__label">Features</span>  
+                </a>
+            </div>
+         </div> 
+    </script> 
+</section>
+<section>
+    <h3>Горизонтальная Мобильная Навигация</h3>
+    <nav class="horisontal">
+        <div class="horisontal__wrap">
+            <a href="#" class="horisontal__item horisontal__item_active">
+                <i class="material-icons">home</i> 
+                <span class="text-label">
+                    Active
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">add_circle_outline</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">account_circle</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">settings</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+        </div> 
+    </nav>
+    <script type="text/plain" class="language-html">
+    <nav class="horisontal">
+        <div class="horisontal__wrap">
+            <a href="#" class="horisontal__item horisontal__item_active">
+                <i class="material-icons">home</i> 
+                <span class="text-label">
+                    Active
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">add_circle_outline</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">account_circle</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+            <a href="#" class="horisontal__item">
+                <i class="material-icons">settings</i>
+                <span class="text-label">
+                    Inactive
+                </span>
+            </a>
+        </div> 
+    </nav> 
+    </script> 
+</section>
+<section>
+    <h3>Tabs</h3>
+    <div class="tabs">
+        <div class="tabs__wrap">
+            <a href="#" class="tabs__item tabs__item_active">
+                <span class="text-label">
+                    Active
+                </span>
+            </a>
+            <a href="#" class="tabs__item">
+                <span class="text-label">
+                    Inative
+                </span>
+            </a>
+            <a href="#" class="tabs__item">
+                <span class="tab-nav__tabel">
+                    Inative
+                </span>
+            </a>
+            <a href="#" class="tabs__item">
+                <span class="text-label">
+                    Inative
+                </span>
+            </a>
+        </div>
+    </div>
+    <script type="text/plain" class="language-html">
+        <div class="tabs">
+            <div class="tabs__wrap">
+                <a href="#" class="tabs__item tabs__item_active">
+                    <span class="text-label">
+                        Active
+                    </span>
+                </a>
+                <a href="#" class="tabs__item">
+                    <span class="text-label">
+                        Inative
+                    </span>
+                </a>
+                <a href="#" class="tabs__item">
+                    <span class="tab-nav__tabel">
+                        Inative
+                    </span>
+                </a>
+                <a href="#" class="tabs__item">
+                    <span class="text-label">
+                        Inative
+                    </span>
+                </a>
+            </div>
+        </div> 
+    </script>   
+</section>
+<section>
+    <h3>Боковая панель навигации</h3>
+    <div class="sidenav">
+        <div class="sidenav__wrap">
+            <a href="#" class="sidenav__item sidenav__item_active">
+                <span class="text-label">Active</span>
+            </a>
+            <a href="#" class="sidenav__item">
+                <span class="text-label">Inactive</span>
+            </a>
+            <a href="#" class="sidenav__item">
+                <span class="text-label">Inactive</span>
+            </a>
+            <a href="#" class="sidenav__item">
+                <span class="text-label">Inactive</span>
+            </a>
+        </div>
+    </div>
+    <script type="text/plain" class="language-html">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+                <a href="#" class="sidenav__item sidenav__item_active">
+                    <span class="text-label">Active</span>
+                </a>
+                <a href="#" class="sidenav__item">
+                    <span class="text-label">Inactive</span>
+                </a>
+                <a href="#" class="sidenav__item">
+                    <span class="text-label">Inactive</span>
+                </a>
+                <a href="#" class="sidenav__item">
+                    <span class="text-label">Inactive</span>
+                </a>
+            </div>
+        </div>  
+    </script>  
+</section>
+<section>
+    <h3>Пагинация</h3> 
+    <div class="paging">
+        <a href="#" class="paging__item">
+           <span class="paging-icon">
+            <i class="material-icons">navigate_before</i>
+           </span>
+        </a>
+        <div class="paging__frame">
+           <a href="#" class="paging__item paging__item_active">
+             <span class="text-body">1</span>
+           </a>
+           <a href="#" class="paging__item">
+             <span class="text-body">2</span>  
+           </a>
+           <a href="#" class="paging__item">
+             <span class="text-body">3</span> 
+           </a>
+           <a href="#" class="paging__item">
+             <span class="text-body">...</span> 
+           </a>
+           <a href="#" class="paging__item">
+             <span class="text-body">9</span>
+           </a>
+        </div>
+        <a href="#" class="paging__item">
+           <span class="paging-icon">
+             <i class="material-icons">navigate_next</i> 
+            </span>
+        </a>
+    </div>
+    <script type="text/plain" class="language-html">
+        <div class="paging">
+            <a href="#" class="paging__item">
+               <span class="paging-icon">
+               
+               </span>
+            </a>
+            <div class="paging__frame">
+               <a href="#" class="paging__item paging__item_active">
+                 <span class="text-body">1</span>
+               </a>
+               <a href="#" class="paging__item">
+                 <span class="text-body">2</span>  
+               </a>
+               <a href="#" class="paging__item">
+                 <span class="text-body">3</span> 
+               </a>
+               <a href="#" class="paging__item">
+                 <span class="text-body">...</span> 
+               </a>
+               <a href="#" class="paging__item">
+                 <span class="text-body">9</span>
+               </a>
+            </div>
+            <a href="#" class="paging__item">
+               <span class="paging-icon">
+                 
+                 </span>
+            </a>
+        </div>
+    </script>    
+</section>
+</article>          
+</main>
+<footer>
+    <div class="row footer-content">
+
+        <div class="column">
+            <div class="row">
+                <span class="body-bold">
+                    Designed By:
+                </span>
+                <a href="https://www.tiborlovas.com/" target="_blank" class="text-body">
+                   Tibor Lovas
+                </a>
+                <span class="emoji text-body" title="Slovakia">🇸🇰</span>
+            </div>
+            <div class="row">
+                <span class="body-bold">
+                    Development:
+                </span>
+                <a href="https://github.com/EShevcow/Wirefigma" target="_blank">
+                    <span class="text-body">Edvard Shevcow</span>
+                </a>
+                <span class="emoji text-body" title="Russia">🇷🇺</span>
+            </div>
+        </div>
+        <div class="live-int">
+            <!--LiveInternet counter-->
+            <a href="https://www.liveinternet.ru/click"
+             class="tooltip-left" data-tooltip="Live Internet Statistic"
+            target="_blank">
+            <img id="licntF358" width="88" height="31" style="border:0" 
+
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            alt="LiveintImg"/>
+            </a>
+            <script>
+            (function(d,s){d.getElementById("licntF358").src=
+            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+            (document,screen)
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div> 
+    <div class="footer-copyright">
+        <span class="text-micro">
+          &copy;  Edvard Shevcov Think Power 2023 - 2024
+        </span>
+    </div> 
+</footer> 
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>

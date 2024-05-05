@@ -44,9 +44,7 @@
         grid-template-columns: auto;  
     }
 }
-.code-toolbar{
-    max-width: 800px;
-}
+
 header{
     padding: 2em 0 2em 1em;
     background: $ebe-bg;
@@ -138,7 +136,9 @@ footer{
         padding: 20px 0 20px 0;
     }
    }
-    
+   .code-toolbar{
+    max-width: 700px;
+    }
     .ads{
         display: none;
     }
@@ -162,9 +162,18 @@ footer{
             display: none;
         }
     }
+    article{
+        gap: 30px;
+        & section{
+            
+            padding: 0;
+        }
+    }
     
 }
-
+.code-toolbar{
+    max-width: 400px;
+}
     .ads{
         display: block;
     }

@@ -51,10 +51,6 @@
   grid-template-columns: auto;
 }
 
-.code-toolbar {
-  max-width: 800px;
-}
-
 header {
   padding: 2em 0 2em 1em;
   background: #EBE9F0;
@@ -166,6 +162,9 @@ footer .footer-copyright {
   .wirenav .navbar__wrap {
     padding: 20px 0 20px 0;
   }
+  .code-toolbar {
+    max-width: 700px;
+  }
   .ads {
     display: none;
   }
@@ -182,6 +181,15 @@ footer .footer-copyright {
   }
   aside .sidenav__item .material-icons {
     display: none;
+  }
+  aside article {
+    gap: 30px;
+  }
+  aside article section {
+    padding: 0;
+  }
+  .code-toolbar {
+    max-width: 400px;
   }
   .ads {
     display: block;
