@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Template</title>
+    <title>Wirefigma Image & Cards</title>
     <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
@@ -91,7 +91,7 @@
                     <i class="large material-icons">notifications</i>    
                     <span class="text-label">Уведомления</span>
                 </a>
-                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Cards">
                     <i class="large material-icons">contact_mail</i>    
                     <span class="text-label">Карточки</span>
                 </a>
@@ -102,86 +102,140 @@
         </div>
     </aside>  
         
-    <article>    
-        <header>
-            <h1>Элементы Навигации</h1>
-            <span class="text-body">
-                Навигация и пагинация
-            </span>
-        </header>
-        <section>
-            <h3>Пример навбара</h3>
-            <nav class="navbar"> 
-            <div class="navbar__wrap">   
-            <a href="#" class="brand-logo">logo</a>
-            <ul class="navbar__menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            </div> 
-            </nav> 
-            
-<script type="text/plain" class="language-html">
-<nav class="navbar"> 
-    <div class="navbar__wrap">   
-    <a href="#" class="brand-logo">logo</a>
-    <ul class="navbar__menu">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">About Us</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-    </div> 
-</nav> 
-</script>
-        </section>
-    <section>
-        <h3>Tabs Side Panel</h3>
-    <div class="sidenav">
-    <div class="sidenav__wrap">
-    <a href="#" class="sidenav__item sidenav__item_active">
-        <span class="text-label">Active</span>
+<article>    
+<header>
+    <h1>Изображения и карточки</h1>
+    <span class="text-body">
+        Вертикальная и горизонтальная карточка
+    </span>
+</header>
+<section>
+ <h3>Изображения</h3>
+ <div class="wireimage">
+    <div class="image__wrap">
+     <img src="img/204538.jpg" alt="Image">
+    </div>
+ </div>
+ <script type="text/plain" class="language-html">
+ <div class="wireimage">
+  <div class="image__wrap">
+     <img src="images/orig.png" alt="Image">
+  </div>
+ </div> 
+ </script>  
+</section>
+<section>
+    <h3>Вертикальная карточка</h3>
+
+    <div class="card-vertical">
+    <div class="card__wrap">
+        <div class="card__image">
+           <img src="img/lenin_monument_neon.png" alt="images">
+        </div>
+    <div class="card__text-block">
+    <span class="body-text">Nostrud Culpa</span>
+    <span class="text-small">Reprehenderit esse labore id veniam ut veniam non ex</span>
+    <div class="card__action">
+    <a href="#">
+        <span class="body-bold">
+        Read More
+        <i class="material-icons">arrow_forward</i>   
+        </span>
     </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
-    <a href="#" class="sidenav__item">
-        <span class="text-label">Inactive</span>
-    </a>
+    <button class="btn primary">
+        <span class="body-bold">Button</span>
+    </button> 
     </div>
     </div>
     
-<script type="text/plain" class="language-html">
-<div class="sidenav">
-<div class="sidenav__wrap">
-<a href="#" class="sidenav__item sidenav__item_active">
-    <span class="text-label">Active</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-<a href="#" class="sidenav__item">
-    <span class="text-label">Inactive</span>
-</a>
-</div>
-</div>  
-</script>
-    </section>
-    </article>          
+    </div>
+    </div>
+    
+    <script type="text/plain" class="language-html">
+        <div class="card-vertical">
+            <div class="card__wrap">
+                <div class="card__image">
+                    <img src="#" alt="images">
+                </div>
+                <div class="card__text-block">
+                    <span class="body-text">Nostrud Culpa</span>
+                    <span class="text-small">
+                        Reprehenderit esse 
+                        labore id veniam ut veniam non ex
+                    </span>
+                <div class="card__action">
+                    <a href="#">
+                      <span class="body-bold">
+                        Read More
+                        <i class="material-icons">arrow_forward</i> 
+                     </span>
+                    </a>
+                    <button class="btn primary">
+                        <span class="body-bold">Button</span>
+                    </button> 
+                </div>
+             </div>
+           </div>
+        </div>
+    </script>         
+</section>
+<section>
+    <h3>Горизонтальная карточка</h3>
+    <div class="card-horizontal">
+        <div class="card__wrap">
+            <div class="card__image">
+                <img src="img/keyboard.jpg" alt="images">
+            </div>
+            <div class="card__text-block">
+                <span class="body-text">Nostrud Culpa</span>
+                <span class="text-small">Reprehenderit labore
+                    <br> 
+                    veniam ut veniam non ex
+                </span>
+                <div class="card__action">
+                    <a href="#">
+                      <span class="body-bold">
+                        Read More
+                        <i class="material-icons">arrow_forward</i>   
+                     </span>
+                    </a>
+                    <button class="btn secondary">
+                        <span class="body-bold">Button</span>
+                    </button> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/plain" class="language-html">
+        <div class="card-horizontal">
+            <div class="card__wrap">
+                <div class="card__image">
+                    <img src="#" alt="images">
+                </div>
+                <div class="card__text-block">
+                    <span class="body-text">Nostrud Culpa</span>
+                    <span class="text-small">Reprehenderit esse labore id
+                        <br> 
+                        veniam ut veniam non ex
+                    </span>
+                    <div class="card__action">
+                        <a href="#">
+                          <span class="body-bold">
+                            Read More
+                            <i class="material-icons">arrow_forward</i>    
+                         </span>
+                        </a>
+                        <button class="btn secondary">
+                            <span class="body-bold">Button</span>
+                        </button> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </script>
+</section>
+</article>          
 </main>
 <footer>
     <div class="row footer-content">

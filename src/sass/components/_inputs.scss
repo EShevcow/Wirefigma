@@ -6,7 +6,7 @@
     line-height: 28px;
     color: currentColor;
     background: #FFFFFF;
-    border: 1px solid $standart-color;
+    border: 2px solid $standart-color;
     border-radius: 4px; 
 }
 /* Input Botoom */
@@ -22,6 +22,16 @@
     height: 48px;
     @include input;
     padding-left: 16px;
+}
+.input-field__input:focus, 
+.input-field__textarea:focus,
+.input-field__date:focus,
+.input-field__numerick:focus,
+.input-field__select:focus,
+.input-field__search:focus{
+    border-color: $active-color;
+    outline: none;
+    color: $active-color;
 }
 @mixin rowfs{
     display: $dsp;
@@ -56,10 +66,8 @@
 }
 /* Textarea */
 .input-field__textarea{
-    height: 120px;
-    width: 295px;
     @include input;
-    padding: 11px 16px;
+    padding: 12px 16px;
 }
 @mixin disabled{
     color: $border-color;

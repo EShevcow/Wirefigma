@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirefigma Notiifications</title>
+    <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wirefigma.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header{
+            background-image: url(img/tekstura-tekstury-stil.jpg);
+        }
+    </style>
+</head>
+<body>
+<nav class="wirenav navbar"> 
+        <div class="navbar__wrap">   
+        <a href="#" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+            <img src="img/Logomark.svg" alt="logo">
+        </a>
+        <ul class="navbar__menu">
+            <li>
+                <a href="getstarted.html">Подключение</a>
+            </li>
+            <li>
+                <a href="navigations.html" class="active">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Сетка</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li>
+            <li>
+                <a href="#">шаблоны</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Landing</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Panel</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar__toggle">
+            <li>
+                <a href="#">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Grids</a>
+            </li>
+            <li>
+                <a href="#">Цвета</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li> 
+        </ul>
+        <a class="navbar__burger" href="#">
+            <i class="large material-icons">dehaze</i>
+        </a>
+        </div> 
+</nav> 
+
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+    
+                <a href="navigations.html" class="sidenav__item" data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Навигация</span>
+                </a>
+                <a href="tables.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Таблицы</span>
+                </a>
+                <a href="buttons.html" class="sidenav__item" data-tooltip="Buttons">
+                    <i class="large material-icons">send</i>    
+                    <span class="text-label">Кнопки</span>
+                </a>
+                <a href="inputs.html" class="sidenav__item" data-tooltip="Inputs">
+                    <i class="large material-icons">check_box</i>    
+                    <span class="text-label">Элементы формы</span>
+                </a>
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Notiifications">
+                    <i class="large material-icons">notifications</i>    
+                    <span class="text-label">Уведомления</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Карточки</span>
+                </a>
+            </div>
+        </div>  
+        <div class="ads">
+           
+        </div>
+    </aside>  
+        
+<article>    
+<header>
+    <h1>Уведомления</h1>
+    <span class="text-body">
+        Всплывающие подсказки
+    </span>
+</header>
+<section>
+  <h3>Тултипы</h3>
+  <p class="text-body">   
+    <a href="#" class="tooltip-top" data-tooltip="Tooltop">Tooltip Top</a>
+</p>
+<p class="text-body">
+  <a href="#" class="tooltip-right" data-tooltip="Tool Right">Tooltip Right</a>
+</p>
+<p class="text-body">
+    <a href="#" class="tooltip-left" data-tooltip="Tool Left">Tooltip Left</a>
+</p>
+<p class="text-body">
+    <a href="#" class="tooltip-bottom" data-tooltip="Tool Bottom">Tooltip Bottom</a>
+</p>
+
+<script type="text/plain" class="language-html">  
+ <a href="#" class="tooltip-top" data-tooltip="Tooltop">Tooltip Top</a>
+    
+ <a href="#" class="tooltip-right" data-tooltip="Tool Right">Tooltip Right</a>
+       
+ <a href="#" class="tooltip-left" data-tooltip="Tool Left">Tooltip Left</a>
+    
+ <a href="#" class="tooltip-bottom" data-tooltip="Tool Bottom">Tooltip Bottom</a>
+    
+</script>  
+</section>
+<section>
+  <h3>Дефолтный Блок уведомлений</h3>
+  <div class="notif-block">
+    <div class="notif-block__wrap">
+        <span class="large-icon">
+            <i class="large material-icons">done_all</i>
+        </span>
+        <span class="text-body">
+            All changes saved
+        </span>
+    </div>
+</div>           
+<script type="text/plain" class="language-html">
+<div class="notif-block">
+    <div class="notif-block__wrap">
+        <span class="large-icon">
+            <i class="large material-icons">done_all</i>
+        </span>
+        <span class="text-body">
+            All changes saved
+        </span>
+    </div>
+</div>        
+</script>    
+</section>
+<section>
+    <h3>Notifications Success</h3>
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__success">
+            <span class="large-icon">
+                <i class="large material-icons">verified_user</i>
+            </span>
+            <span class="text-body">
+              Success
+            </span>
+        </div>
+    </div>           
+    <script type="text/plain" class="language-html">
+        <div class="notif-block">
+            <div class="notif-block__wrap notif-block__success">
+                <span class="large-icon">
+                    <i class="large material-icons">verified_user</i>
+                </span>
+                <span class="text-body">
+                  Success
+                </span>
+            </div>
+        </div>   
+    </script>   
+</section>
+<section>
+    <h3>Notifications Warning</h3>
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__warning">
+            <span class="large-icon">
+                <i class="large material-icons">warning</i>
+            </span>
+            <span class="text-body">
+              Warning
+            </span>
+        </div>
+    </div>           
+<script type="text/plain" class="language-html">
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__warning">
+            <span class="large-icon">
+                <i class="large material-icons">warning</i>
+            </span>
+            <span class="text-body">
+              Warning
+            </span>
+        </div>
+    </div>        
+</script>     
+</section>
+<section>
+    <h3>Notifications Danger</h3>
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__danger">
+            <span class="large-icon">
+                <i class="large material-icons">do_not_disturb_on</i>
+            </span>
+            <span class="text-body">
+              Danger
+            </span>
+        </div>
+    </div>           
+<script type="text/plain" class="language-html">
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__danger">
+            <span class="large-icon">
+                <i class="large material-icons">do_not_disturb_on</i>
+            </span>
+            <span class="text-body">
+              Danger
+            </span>
+        </div>
+    </div>        
+</script>      
+</section>
+<section>
+    <h3>Notifications Action</h3>
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__action">
+            <span class="large-icon">
+                <i class="large material-icons">check</i>
+            </span>
+            <span class="text-body">
+              Action
+            </span>
+        </div>
+    </div>           
+<script type="text/plain" class="language-html">
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__action">
+            <span class="large-icon">
+                <i class="large material-icons">check</i>
+            </span>
+            <span class="text-body">
+              Action
+            </span>
+        </div>
+    </div>        
+</script>     
+</section>
+<section>
+<h3>Blockquote</h3>
+<blockquote>
+    Wirefigma is awesome! 
+</blockquote>
+</section>
+<section>
+    <h3>Pills</h3>
+    <div class="row">
+     <span class="pill">
+        <span class="micro-bold">Label</span>
+    </span>
+    <span class="pill">
+        <span class="micro-bold"> 
+            <i class="material-icons">check_circle</i>
+        </span>
+       
+        <span class="micro-bold">Label</span>
+    </span>
+    <span class="pill">
+        <span class="micro-bold">Label</span>
+         <span class="micro-bold"> 
+            <i class="material-icons">cancel</i>
+        </span>
+    </span> 
+      <span class="pill">
+        <span class="micro-bold"> 
+            <i class="large material-icons">check_circle</i>
+        </span>
+        <span class="micro-bold">Label</span>
+         <span class="micro-bold"> 
+            <i class="large material-icons">cancel</i>
+        </span>
+    </span>
+    </div>
+    
+    
+    
+    <script type="text/plain" class="language-html">
+        <span class="pill">
+            <span class="micro-bold">Label</span>
+        </span>
+        <span class="pill">
+            <span class="micro-bold"> 
+                <i class="large material-icons">insert_chart</i>
+            </span>
+           
+            <span class="micro-bold">Label</span>
+        </span>
+        <span class="pill">
+            <span class="micro-bold">Label</span>
+             <span class="micro-bold"> 
+                <i class="large material-icons">insert_chart</i>
+            </span>
+        </span>
+        
+        <span class="pill">
+            <span class="micro-bold"> 
+                <i class="large material-icons">insert_chart</i>
+            </span>
+            <span class="micro-bold">Label</span>
+             <span class="micro-bold"> 
+                <i class="large material-icons">insert_chart</i>
+            </span>
+        </span>   
+    </script>   
+</section>
+<section>
+    <h3>Sticky Note</h3>
+    <div class="sticky-note">
+        <div class="sticky-note__wrap">
+            <span class="text-body">Sticky note comment</span>
+        </div>
+    </div>
+    <script type="text/plain" class="language-html">
+    <div class="sticky-note">
+        <div class="sticky-note__wrap">
+            <span class="text-body">Sticky note comment</span>
+        </div>
+    </div>
+    </script> 
+</section>
+<section>
+    <h3>Callout</h3>
+    <span class="callout">
+        <span class="body-text">1</span>
+    </span>
+    <script type="text/plain" class="language-html">
+    <span class="callout">
+      <span class="body-text">1</span>
+    </span>
+    </script> 
+</section>
+</article>          
+</main>
+<footer>
+    <div class="row footer-content">
+
+        <div class="column">
+            <div class="row">
+                <span class="body-bold">
+                    Designed By:
+                </span>
+                <a href="https://www.tiborlovas.com/" target="_blank" class="text-body">
+                   Tibor Lovas
+                </a>
+                <span class="emoji text-body" title="Slovakia">🇸🇰</span>
+            </div>
+            <div class="row">
+                <span class="body-bold">
+                    Development:
+                </span>
+                <a href="https://github.com/EShevcow/Wirefigma" target="_blank">
+                    <span class="text-body">Edvard Shevcow</span>
+                </a>
+                <span class="emoji text-body" title="Russia">🇷🇺</span>
+            </div>
+        </div>
+        <div class="live-int">
+            <!--LiveInternet counter-->
+            <a href="https://www.liveinternet.ru/click"
+             class="tooltip-left" data-tooltip="Live Internet Statistic"
+            target="_blank">
+            <img id="licntF358" width="88" height="31" style="border:0" 
+
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            alt="LiveintImg"/>
+            </a>
+            <script>
+            (function(d,s){d.getElementById("licntF358").src=
+            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+            (document,screen)
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div> 
+    <div class="footer-copyright">
+        <span class="text-micro">
+          &copy;  Edvard Shevcov Think Power 2023 - 2024
+        </span>
+    </div> 
+</footer> 
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>

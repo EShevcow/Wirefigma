@@ -53,6 +53,7 @@
 }
 .pill{
     display: inline-flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 5px 10px;
@@ -65,7 +66,33 @@ blockquote{
     border-left: 5px solid $active-color;
     background: $ebe-bg;
 }
-
+/* Notification */
+.notif-block{
+    box-shadow: $bshd;
+    border-radius: 5px;
+}
+.notif-block__wrap{
+    @include frow;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 16px;
+}
+.notif-block__success{
+    background: yellowgreen;
+    color: #FFF;
+}
+.notif-block__warning{
+    background: #f89406;
+    color: #FFF;
+}
+.notif-block__danger{
+    background: #bd362f;
+    color: #FFF;
+}
+.notif-block__action{
+    background: $active-color;
+    color: #FFF;
+}
 /* Annotations */
 @mixin annot{
     background: #FFFDA1;

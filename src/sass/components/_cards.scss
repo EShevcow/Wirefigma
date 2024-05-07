@@ -1,7 +1,6 @@
 @import "_variables.scss";
 
 /* Cards */
-/* Card */
 @mixin card{
     box-shadow: $bshd;
     border-radius: 5px;
@@ -55,6 +54,6 @@
     align-items: $ai;
 }
 .card-horizontal .card__image{
-    width: 165px;
-    height: 165px;
+   width: 40%;
+   height: auto;
 }
