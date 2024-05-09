@@ -143,6 +143,12 @@ footer .footer-copyright {
   color: #2F1160;
 }
 
+.rectangle {
+  height: 150px;
+  width: 100%;
+  background: #2F1160;
+}
+
 @media screen and (max-width: 960px) {
   .main {
     grid-template-columns: 50px auto;

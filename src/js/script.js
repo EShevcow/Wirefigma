@@ -4,7 +4,9 @@ $(document).ready(function(){
     if($('.accordion').hasClass('oneopen')){
         $('.accordion__body').not($(this).next()).slideUp(300);
     }
-    $(this).next().slideToggle(300);
+    
+       $(this).next().slideToggle(300);
+   
   });
 });
 

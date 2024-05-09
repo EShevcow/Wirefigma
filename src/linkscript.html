@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Grids</title>
+    <title>Wirefigma Connect Script</title>
     <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         header{
-            background-image: url(img/tekstura-tekstury-stil.jpg);
+            background-image: url(img/code-3337044.jpg);
         }
     </style>
 </head>
@@ -29,10 +29,10 @@
                 <a href="navigations.html">Компоненты</a>
             </li>
             <li>
-                <a href="#" class="active">Сетка</a>
+                <a href="grid.html">Сетка</a>
             </li>
             <li>
-                <a href="#">скрипты</a>
+                <a href="#" class="active">скрипты</a>
             </li>
             <li>
                 <a href="#">шаблоны</a>
@@ -66,115 +66,67 @@
         </div> 
 </nav> 
 
-<main class="main-index">   
-    <article>    
-        <header>
-            <h1>Адаптивная сетка Wirefigma</h1>
-            <span class="text-body">
-                Flex & Grid Layouts 
-            </span>
-        </header>
-<section>
-
-    <h3>Flex Row</h3>
-<div class="row">
-    <div class="rectangle"></div>
-    <div class="rectangle"></div>
-    <div class="rectangle"></div>
-    <div class="rectangle"></div> 
-</div>
-
-<script type="text/plain" class="language-html">
-<div class="row"> 
-    <!-- Elem 1 -->
-    <!-- Elem 2 -->
-    <!-- Elem 3 -->
-    <!-- Elem 4 -->   
-</div>
-</script>       
-    
-</section>
-<section>
-    <h3>Flex Column</h3>
-    <div class="column">
-      <div class="rectangle"></div> 
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
-    </div>
-              
-    <script type="text/plain" class="language-html">
-    <div class="column">
-       <!-- Elem 1 -->
-       <!-- Elem 2 -->
-       <!-- Elem 3 -->
-       <!-- Elem 4 -->  
-    </div>
-    </script>  
-</section>
-<section>
-    <h3>2 Columns Grid</h3>
-    <div class="container">
-       <div class="col-2">
-           <div class="rectangle"></div> 
-           <div class="rectangle"></div>
-           <div class="rectangle"></div>
-           <div class="rectangle"></div> 
-       </div>
-    </div>           
-   <script type="text/plain" class="language-html">
-       <div class="container">
-           <div class="col-2">
-               <!-- Elem 1 -->
-               <!-- Elem 2 -->
-               <!-- Elem 3 --> 
-               <!-- Elem 4 -->  
-           </div>
-        </div> 
-   </script>     
-</section>
-<section>
-    <h3>3 Column Grid</h3>
-    <div class="container">
-        <div class="col-3">
-            <div class="rectangle"></div> 
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div> 
-        </div>
-     </div> 
-             
-    <script type="text/plain" class="language-html">
-        <div class="container">
-            <div class="col-3">
-                <!-- Elem 1 -->
-                <!-- Elem 2 -->
-                <!-- Elem 3 --> 
-                <!-- Elem 4 -->  
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Tables">
+                    <i class="large material-icons"></i>     
+                    <span class="text-label">Подключение скриптов</span>
+                </a>
+                <a href="accordion.html" class="sidenav__item"  data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Аккордион</span>
+                </a>
+                <a href="modal.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Диалоговое окно</span>
+                </a>
+               
             </div>
-         </div> 
-    </script>    
-</section>
-<section>
-    <h3>4 Column Grid</h3>
-    <div class="container">
-        <div class="col-4">
-            <div class="rectangle"></div> 
-            <div class="rectangle"></div>
-            <div class="rectangle"></div> 
-            <div class="rectangle"></div> 
+        </div>  
+        <div class="ads">
+           
         </div>
-     </div>        
-    <script type="text/plain" class="language-html">
-        <div class="container">
-            <div class="col-4">
-                <!-- Elem 1 -->
-                <!-- Elem 2 -->
-                <!-- Elem 3 --> 
-                <!-- Elem 4 -->   
-            </div>
-         </div>  
-    </script>     
+    </aside>  
+        
+<article>    
+<header>
+<h1>Java Script</h1>
+<span class="text-body">
+  Подключение файлов
+</span>
+</header>
+<section>
+ <h3>Jquery CDN</h3> 
+ <script type="text/plain" class="language-html">  
+    <!-- Dont Forget adding closing tags for scrits -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous">
+  
+</script>
+<h3>Скрипты Wirefigma</h3>
+<span class="subheading-third">
+    Ссылка на Github
+</span>
+<a href="https://github.com/EShevcow/Wirefigma/blob/master/src/js/script.js" class="btn secondary">Github</a>
+<div class="wireimage">
+    <div class="image__wrap">
+       <img src="img/22-29-13.png" alt="Image">
+    </div>
+   </div> 
+<script type="text/plain" class="language-html">  
+    <!-- Dont Forget adding closing tags for scrits -->
+    <script src="js/script.js">
+  
+</script>
+<h3>Подключение на прямую с сайта</h3>
+<script type="text/plain" class="language-html">  
+    <!-- Dont Forget adding closing tags for scrits -->
+    <script src="http://wirefigma.ru/js/script.js">
+  
+</script>
 </section>
 </article>          
 </main>

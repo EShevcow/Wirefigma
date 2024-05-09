@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirefigma Accordion</title>
+    <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wirefigma.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header{
+            background-image: url(img/code-3337044.jpg);
+        }
+    </style>
+</head>
+<body>
+<nav class="wirenav navbar"> 
+        <div class="navbar__wrap">   
+        <a href="#" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+            <img src="img/Logomark.svg" alt="logo">
+        </a>
+        <ul class="navbar__menu">
+            <li>
+                <a href="getstarted.html">Подключение</a>
+            </li>
+            <li>
+                <a href="navigations.html">Компоненты</a>
+            </li>
+            <li>
+                <a href="grid.html">Сетка</a>
+            </li>
+            <li>
+                <a href="#" class="active">скрипты</a>
+            </li>
+            <li>
+                <a href="#">шаблоны</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Landing</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Panel</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar__toggle">
+            <li>
+                <a href="#">Компоненты</a>
+            </li>
+            <li>
+                <a href="#">Grids</a>
+            </li>
+            <li>
+                <a href="#">Цвета</a>
+            </li>
+            <li>
+                <a href="#">скрипты</a>
+            </li> 
+        </ul>
+        <a class="navbar__burger" href="#">
+            <i class="large material-icons">dehaze</i>
+        </a>
+        </div> 
+</nav> 
+
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">
+                <a href="linkscript.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons"></i>     
+                    <span class="text-label">Подключение скриптов</span>
+                </a>
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Navigation">
+                    <i class="large material-icons">navigation</i>     
+                    <span class="text-label">Аккордион</span>
+                </a>
+                <a href="modal.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Диалоговое окно</span>
+                </a>
+               
+            </div>
+        </div>  
+        <div class="ads">
+           
+        </div>
+    </aside>  
+        
+<article>    
+<header>
+<h1>Java Script</h1>
+<span class="text-body">
+   Спойлер и Аккордион
+</span>
+</header>
+
+<section>
+    <h3>Accordion</h3>
+    <div class="accordion oneopen">  
+        <div class="accordion__header">
+        <span class="body-bold">
+            First
+        </span>
+         <i class="material-icons">expand_more</i>   
+        </div>
+        <div class="accordion__body">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias deserunt mollitia, 
+            temporibus iure ea quasi quibusdam porro magnam facilis!</span>
+        </div>   
+        <div class="accordion__header">
+        <span class="body-bold">
+            Second
+        </span>
+        <i class="material-icons">expand_more</i>
+        </div>
+        <div class="accordion__body">
+        <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+        <div class="accordion__header">
+        <span class="body-bold">
+            Third
+        </span>
+        <i class="material-icons">expand_more</i>
+    </div>
+        <div class="accordion__body">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+    </div>
+    <blockquote>
+      Если убрать класс <b>oneopen,</b> то получится спойлер, где каждый блок открывается отдельно
+    </blockquote>
+    <div class="notif-block">
+        <div class="notif-block__wrap notif-block__warning">
+            <span class="large-icon">
+                <i class="material-icons">warning</i>
+            </span>
+            <span class="text-body">
+              Если поместить на одной странице спойлер и аккордион, то они будут функционировать как аккордион
+            </span>
+        </div>
+    </div>        
+    <script type="text/plain" class="language-html">
+        <div class="accordion oneopen">  
+            <div class="accordion__header">
+            <span class="body-bold">
+                First
+            </span>
+            <i class="material-icons">expand_more</i>
+            </div>
+            <div class="accordion__body">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsam molestias deserunt mollitia, 
+              </span>
+            </div>   
+            <div class="accordion__header">
+            <span class="body-bold">
+                Second
+            </span>
+            <i class="material-icons">expand_more</i>
+            </div>
+            <div class="accordion__body">
+            <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="accordion__header">
+            <span class="body-bold">
+                Third
+            </span>
+            <i class="material-icons">expand_more</i>
+        </div>
+            <div class="accordion__body">
+            <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+        
+        </div>
+    </script> 
+    <h3>Script</h3>
+    <script type="text/plain" class="language-js">
+        $(document).ready(function(){
+            $('.accordion__header').click(function(event){
+              if($('.accordion').hasClass('oneopen')){
+                  $('.accordion__body').not($(this).next()).slideUp(300);
+              }
+              $(this).next().slideToggle(300);
+            });
+          });  
+     </script>   
+</section>
+</article>          
+</main>
+<footer>
+    <div class="row footer-content">
+
+        <div class="column">
+            <div class="row">
+                <span class="body-bold">
+                    Designed By:
+                </span>
+                <a href="https://www.tiborlovas.com/" target="_blank" class="text-body">
+                   Tibor Lovas
+                </a>
+                <span class="emoji text-body" title="Slovakia">🇸🇰</span>
+            </div>
+            <div class="row">
+                <span class="body-bold">
+                    Development:
+                </span>
+                <a href="https://github.com/EShevcow/Wirefigma" target="_blank">
+                    <span class="text-body">Edvard Shevcow</span>
+                </a>
+                <span class="emoji text-body" title="Russia">🇷🇺</span>
+            </div>
+        </div>
+        <div class="live-int">
+            <!--LiveInternet counter-->
+            <a href="https://www.liveinternet.ru/click"
+             class="tooltip-left" data-tooltip="Live Internet Statistic"
+            target="_blank">
+            <img id="licntF358" width="88" height="31" style="border:0" 
+
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+            alt="LiveintImg"/>
+            </a>
+            <script>
+            (function(d,s){d.getElementById("licntF358").src=
+            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+            (document,screen)
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div> 
+    <div class="footer-copyright">
+        <span class="text-micro">
+          &copy;  Edvard Shevcov Think Power 2023 - 2024
+        </span>
+    </div> 
+</footer> 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+crossorigin="anonymous"></script>
+   
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>

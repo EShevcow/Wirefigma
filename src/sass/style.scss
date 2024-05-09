@@ -111,6 +111,11 @@ footer{
         color: $standart-color;
     }
 }
+.rectangle{
+    height: 150px;
+    width: 100%;
+    background: $standart-color;
+}
 @media screen and (max-width: 960px){
     .main{
         grid-template-columns: 50px auto;
