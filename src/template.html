@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/wirefigma.css">
     <link rel="stylesheet" href="css/prism.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
     <style>
         header{
             background-image: url(img/tekstura-tekstury-stil.jpg);
@@ -18,7 +19,7 @@
 <body>
 <nav class="wirenav navbar"> 
         <div class="navbar__wrap">   
-        <a href="#" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
+        <a href="index.html" class="brand-logo tooltip-right" data-tooltip="Wirefigma 2.0">
             <img src="img/Logomark.svg" alt="logo">
         </a>
         <ul class="navbar__menu">
@@ -29,13 +30,16 @@
                 <a href="navigations.html" class="active">Компоненты</a>
             </li>
             <li>
-                <a href="#">Сетка</a>
+                <a href="grid.html">Сетка</a>
             </li>
             <li>
-                <a href="#">скрипты</a>
+                <a href="linkscript.html">скрипты</a>
             </li>
             <li>
-                <a href="#">шаблоны</a>
+                <a href="#">
+                    <i class="icofont-caret-down"></i>
+                    шаблоны
+                </a>
                 <ul class="dropdown">
                     <li>
                         <a href="#">Landing</a>
@@ -48,16 +52,19 @@
         </ul>
         <ul class="navbar__toggle">
             <li>
-                <a href="#">Компоненты</a>
+                <a href="getstarted.html">Подключение</a>
             </li>
             <li>
-                <a href="#">Grids</a>
+                <a href="navigations.html">Компоненты</a>
+            </li>
+            <li>
+                <a href="grid.html">Grids</a>
             </li>
             <li>
                 <a href="#">Цвета</a>
             </li>
             <li>
-                <a href="#">скрипты</a>
+                <a href="linkscript.html">скрипты</a>
             </li> 
         </ul>
         <a class="navbar__burger" href="#">
@@ -91,7 +98,7 @@
                     <i class="large material-icons">notifications</i>    
                     <span class="text-label">Уведомления</span>
                 </a>
-                <a href="#" class="sidenav__item" data-tooltip="Cards">
+                <a href="cards.html" class="sidenav__item" data-tooltip="Cards">
                     <i class="large material-icons">contact_mail</i>    
                     <span class="text-label">Карточки</span>
                 </a>
@@ -181,7 +188,12 @@
 </div>  
 </script>
     </section>
-    </article>          
+    </article> 
+    <div class="scroll-top" title="Вверх">
+        <button class="btn-round round-primary">
+            <i class="icofont-simple-up"></i>
+        </button> 
+    </div>         
 </main>
 <footer>
     <div class="row footer-content">

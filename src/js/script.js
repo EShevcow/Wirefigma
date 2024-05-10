@@ -10,12 +10,20 @@ $(document).ready(function(){
   });
 });
 
-/* Scrollspy
-$(document).ready(function(){
-  $('.scrollspy').scrollSpy();
+ //Scrolltop
+ $(window).scroll(function (){
+  if ($(this).scrollTop() > 100){
+    $(".scroll-top").fadeIn();
+  } else{
+    $(".scroll-top").fadeOut();
+  }
+});
+$(document).on("click", ".scroll-top", function(e){
+  e.preventDefault();
+  $('body, html').animate({scrollTop: 0}, 1000);
 });
 
-// Animate Logo
+/* Animate Logo
 $(document).ready(function(){
   $('.home .brandlogo img').css("transform","skew(0deg)");
   $('.boots').css("transform","translateX(0px)");

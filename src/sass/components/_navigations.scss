@@ -22,7 +22,7 @@ ul.navbar__menu {
     & li{
     display: inline-block;
     position: relative;
-    margin: -3px;
+    margin: 0 -3px 0 -3px;
     & a{
     display: block;
     padding: 25px 30px;
@@ -47,7 +47,7 @@ ul.navbar__menu {
 
        & li {
           display: block;
-          padding: 3px;
+          padding: 0 -3px 0 -3px;
        }
     }
     & li:hover {
