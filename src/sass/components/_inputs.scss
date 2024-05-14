@@ -23,16 +23,6 @@
     @include input;
     padding-left: 16px;
 }
-.input-field__input:focus, 
-.input-field__textarea:focus,
-.input-field__date:focus,
-.input-field__numerick:focus,
-.input-field__select:focus,
-.input-field__search:focus{
-    border-color: $active-color;
-    outline: none;
-    color: $active-color;
-}
 @mixin rowfs{
     display: $dsp;
     flex-direction: row;
@@ -50,24 +40,38 @@
     background: #FFFFFF;
     @include rowfs;
     position: absolute;
-    margin-top: -10px;
+    margin-top: -60px;
     margin-left: 16px;
     color: $standart-color;
 }
+
 .label-disabled {
     color: $border-color
 } 
 .input-field__input:disabled, .input-field__label_disabled{
     color: $border-color;
 }
-.input-field__input:focus .input-field__label{
+.input-field__input:focus, 
+.input-field__textarea:focus,
+.input-field__date:focus,
+.input-field__numerick:focus,
+.input-field__select:focus,
+.input-field__search:focus{
+    border-color: $active-color;
+    outline: none;
     color: $active-color;
-    transition: all 0.3s ease-in;
+    &  ~ .input-field__label{
+        color: $active-color;
+    }
+
 }
 /* Textarea */
 .input-field__textarea{
     @include input;
     padding: 12px 16px;
+    & ~ .input-field__label{
+        margin-top: -10px;
+    }
 }
 @mixin disabled{
     color: $border-color;
@@ -92,25 +96,27 @@
     @include sizeparam;
     @include input;
     padding-left: 16px;
-    word-spacing: inherit;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    & option{
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: $bold;
+        line-height: inherit; 
+    }
    
 }
 .input-field__icon {
     position: absolute;
-    margin-left: 260px;
-    margin-top: 12px;
+    margin-left: -30px;
+    margin-top: 16px;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
 }
-.input-field__option {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: $bold;
-    line-height: inherit;
+.input-field__select:focus ~ .input-field__icon{
+   color: $active-color;
 }
 .input-field__date {
    width: 280px;
@@ -137,20 +143,23 @@
     @include input;
     width: 290px;
     height: 50px;
-    padding-left: 18px;
+    padding-left: 35px;
     padding-right: 16px;
+}
+.input-field__search:focus ~ .input-field__search-icon{
+    color: $active-color;
 }
 .input-field__search:disabled{
     @include disabled;
 }
 .input-field__search-icon{
     position: absolute;
-    margin-top: 14px;
-    margin-left: 16px;
+    margin-top: 15px;
+    margin-left: -275px;
     font-size: 16px;
     font-weight: 900;
     line-height: 18px;
-    color: $border-color;
+    color: $standart-color;
 }
 /* Radio Buttons */
 .form-control {
@@ -305,7 +314,7 @@ input[type=checkbox].standart__check:disabled:before {
 	box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
 }
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
-	background: $active-bg;
+	background: $active-color;
 }
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
 	transform:translateX(20px);

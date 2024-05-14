@@ -32,6 +32,7 @@ $(document).ready(function(){
 });
 */
 
+$('.input-field__input').
 // Modal Open
 $('.modal-trigger').click(function(){
    $('.modal').slideToggle();
