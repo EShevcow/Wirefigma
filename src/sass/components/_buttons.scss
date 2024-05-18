@@ -8,6 +8,9 @@
     border: 3px solid $border-color;
     border-radius: 4px;
     height: 48px; 
+    & i{
+        font-size: large;
+    }
 }
 .primary{
     background: $standart-color;
@@ -97,13 +100,9 @@
     border-radius: 999px;
     height: 48px;
     width: 48px;
-}
-.btn-round .material-icons{
-    font-weight: 900;
-    line-height: 28px;
-}
-.btn-round i{
+    & i{
     font-size: 25px;
+    }
 }
 .round-primary{
     background: $standart-color;
@@ -113,6 +112,7 @@
 .round-secondary {
     background-color: #FBFAFC;
     border-color: $standart-color;
+    color: $standart-color;
 }
 .round-tretiary {
     background: #FFFFFF;
@@ -120,9 +120,9 @@
     color: $standart-color;
 }
 .round-primary_disabled{
-    background: $active-bg;
+    background: $ebe-bg;
     color: $border-color;
-    border-color: #FFFFFF;
+    border-color: $ebe-bg;
 }
 .round-secondary_disabled{
     background: #FFFFFF;

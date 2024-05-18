@@ -1,14 +1,3 @@
-// Accordion
-$(document).ready(function(){
-  $('.accordion__header').click(function(event){
-    if($('.accordion').hasClass('oneopen')){
-        $('.accordion__body').not($(this).next()).slideUp(300);
-    }
-    
-       $(this).next().slideToggle(300);
-   
-  });
-});
 
  //Scrolltop
  $(window).scroll(function (){
@@ -31,17 +20,6 @@ $(document).ready(function(){
   $('.index .btn').css("transform","translateY(0px)");
 });
 */
-
-$('.input-field__input').
-// Modal Open
-$('.modal-trigger').click(function(){
-   $('.modal').slideToggle();
-});
-
-// Close Modal
-$('.modal-close').click(function() {
-   $('.modal').slideToggle();
-});
 
 // Add Or Remove Tooltips
 setInterval(function(){

@@ -408,10 +408,16 @@ ul.navbar__menu li:hover ul.dropdown {
   gap: 10px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 560px) {
   .col-2, .col-3, .col-4 {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .col-4 {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 }
 /* Cards */
@@ -910,6 +916,9 @@ h4 {
   border-radius: 4px;
   height: 48px;
 }
+.btn i {
+  font-size: large;
+}
 
 .primary {
   background: #2F1160;
@@ -1027,12 +1036,6 @@ h4 {
   height: 48px;
   width: 48px;
 }
-
-.btn-round .material-icons {
-  font-weight: 900;
-  line-height: 28px;
-}
-
 .btn-round i {
   font-size: 25px;
 }
@@ -1046,6 +1049,7 @@ h4 {
 .round-secondary {
   background-color: #FBFAFC;
   border-color: #2F1160;
+  color: #2F1160;
 }
 
 .round-tretiary {
@@ -1055,9 +1059,9 @@ h4 {
 }
 
 .round-primary_disabled {
-  background: #FBFAFC;
+  background: #EBE9F0;
   color: #B9B7BD;
-  border-color: #FFFFFF;
+  border-color: #EBE9F0;
 }
 
 .round-secondary_disabled {

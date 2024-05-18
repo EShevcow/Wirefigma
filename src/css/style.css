@@ -120,7 +120,7 @@ aside .sidenav__item:hover {
 .scroll-top {
   position: fixed;
   right: 50px;
-  bottom: 30px;
+  bottom: 80px;
   z-index: 10;
 }
 
@@ -133,7 +133,7 @@ footer .footer-content {
   padding: 2em 0 2em 2em;
 }
 footer .live-int {
-  margin-left: 60%;
+  margin-left: 55%;
 }
 footer .footer-copyright {
   height: 50px;
@@ -143,9 +143,8 @@ footer .footer-copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #EBE9F0;
   color: #2F1160;
 }
