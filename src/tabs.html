@@ -7,7 +7,7 @@
     name="keywords"
     content="Js Accordion">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Accordion</title>
+    <title>Wirefigma Tabs</title>
     <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
@@ -82,7 +82,7 @@
                     <i class="large material-icons"></i>     
                     <span class="text-label">Подключение скриптов</span>
                 </a>
-                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Navigation">
+                <a href="#" class="sidenav__item" data-tooltip="Navigation">
                     <i class="large material-icons">navigation</i>     
                     <span class="text-label">Аккордион</span>
                 </a>
@@ -90,7 +90,7 @@
                     <i class="large material-icons">grid_on</i>     
                     <span class="text-label">Диалоговое окно</span>
                 </a>
-                <a href="tabs.html" class="sidenav__item" data-tooltip="Tables">
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Tables">
                     <i class="large material-icons">grid_on</i>     
                     <span class="text-label">Табы</span>
                 </a>
@@ -109,100 +109,107 @@
 <header>
 <h1>Java Script</h1>
 <span class="text-body">
-   Спойлер и Аккордион
+   Табы вкладки
 </span>
 </header>
 
 <section>
-    <h3>Accordion</h3>
-    <div class="accordion oneopen">  
-        <div class="accordion__header">
-        <span class="body-bold">
-            First
-        </span>
-        <i class="icofont-rounded-down"></i>
+    <h3>Tabs</h3>
+    <div class="tabs">
+        <ul class="tabs__wrap">
+            <li class="tabs__item active" data-tab="tab1">
+                <span class="text-label">
+                    Content 1
+                </span>
+            </li>
+            <li class="tabs__item" data-tab="tab2">
+                <span class="text-label">
+                    Content 2
+                </span>
+            </li>
+            <li class="tabs__item" data-tab="tab3">
+                <span class="text-label">
+                    Content 3
+                </span>
+            </li>
+            <li class="tabs__item" data-tab="tab4">
+                <span class="text-label">
+                    Content 4
+                </span>
+            </li>
+        </ul>
+    </div> 
+    <div class="tab-content active" id="tab1">
+       <h2>Content 1</h2>
+       <div class="wireimage">
+        <div class="image__wrap">
+           <img src="img/code-3337044.jpg" alt="Image">
         </div>
-        <div class="accordion__body">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias deserunt mollitia, 
-            temporibus iure ea quasi quibusdam porro magnam facilis!</span>
-        </div>   
-        <div class="accordion__header">
-        <span class="body-bold">
-            Second
-        </span>
-        <i class="icofont-rounded-down"></i>
-        </div>
-        <div class="accordion__body">
-        <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-        <div class="accordion__header">
-        <span class="body-bold">
-            Third
-        </span>
-        <i class="icofont-rounded-down"></i>
+       </div> 
+    </div>  
+    <div class="tab-content" id="tab2">
+        <h2>Content 2</h2>
+         <div class="wireimage">
+            <div class="image__wrap">
+               <img src="img/fon-marafon-101.jpg" alt="Image">
+            </div>
+         </div> 
     </div>
-        <div class="accordion__body">
-        <span>Lorem ipsum dolor sit amet.</span>
-    </div>
-    </div>
-    <blockquote>
-      Если убрать класс <b>oneopen,</b> то получится спойлер, где каждый блок открывается отдельно
-    </blockquote>
-    <div class="notif-block">
-        <div class="notif-block__wrap notif-block__warning">
-            <span class="large-icon">
-                <i class="icofont-warning"></i>
-            </span>
-            <span class="text-body">
-              Если поместить на одной странице спойлер и аккордион, то они будут функционировать как аккордион
-            </span>
+    <div class="tab-content" id="tab3">
+        <h2>Content 3</h2>
+       <div class="wireimage">
+        <div class="image__wrap">
+           <img src="img/foggy-borisoglebskoe.jpg" alt="Image">
         </div>
-    </div>        
+       </div> 
+    </div>
+    <div class="tab-content" id="tab4">
+        <h2>Content 4</h2>
+       <div class="wireimage">
+        <div class="image__wrap">
+           <img src="img/keyboard.jpg" alt="Image">
+        </div>
+       </div> 
+    </div>
+   <!--Your Content-->
     <script type="text/plain" class="language-html">
-    <div class="accordion oneopen">  
-        <div class="accordion__header">
-            <span class="body-bold">
-                First
-            </span>
-            <i class="icofont-rounded-down"></i>
+        <div class="tabs">
+            <ul class="tabs__wrap">
+                <li class="tabs__item active" data-tab="tab1">
+                    <span class="text-label">
+                        Content 1
+                    </span>
+                </li>
+                <li class="tabs__item" data-tab="tab2">
+                    <span class="text-label">
+                        Content 2
+                    </span>
+                </li>
+                <li class="tabs__item" data-tab="tab3">
+                    <span class="text-label">
+                        Content 3
+                    </span>
+                </li>
+                <li class="tabs__item" data-tab="tab4">
+                    <span class="text-label">
+                        Content 4
+                    </span>
+                </li>
+            </ul>
+        </div> 
+        <div class="tab-content active" id="tab1">
+            <!--Your Content 1-->
+        </div>  
+        <div class="tab-content" id="tab2">
+            <!--Your Content 2-->
         </div>
-        <div class="accordion__body">
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ipsam molestias deserunt mollitia, 
-              </span>
-        </div>   
-        <div class="accordion__header">
-            <span class="body-bold">
-                Second
-            </span>
-            <i class="icofont-rounded-down"></i>
+        <div class="tab-content" id="tab3">
+            <!--Your Content 3-->
         </div>
-        <div class="accordion__body">
-            <span>Lorem ipsum dolor sit amet.</span>
+        <div class="tab-content" id="tab4">
+            <!--Your Content 4-->
         </div>
-        <div class="accordion__header">
-            <span class="body-bold">
-                Third
-            </span>
-            <i class="icofont-rounded-down"></i>
-        </div>
-        <div class="accordion__body">
-            <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </div>
-    </script> 
-    <h3>Script</h3>
-    <script type="text/plain" class="language-js">
-        $(document).ready(function(){
-            $('.accordion__header').click(function(event){
-              if($('.accordion').hasClass('oneopen')){
-                  $('.accordion__body').not($(this).next()).slideUp(300);
-              }
-              $(this).next().slideToggle(300);
-            });
-          });  
-     </script>   
+    </script>  
 </section>
 </article>  
 <div class="scroll-top" title="Вверх">

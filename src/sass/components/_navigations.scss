@@ -31,19 +31,26 @@ ul.navbar__menu {
     text-transform: uppercase;
     }
     & ul.dropdown {  
-    position: absolute;
-    z-index: 9;
-    display: none;
-    transition: all 0.3s;
+       position: absolute;
+       z-index: 9;
+       display: none;
+       transition: all 0.3s;
     }
-    & a:hover, .active{
-    background: $standart-color;
-    color: #FFF;
-    transition: all 0.3s;
-    }  
+    & a:hover{
+       background: $standart-color;
+       color: #FFF;
+       transition: all 0.3s;
+    } 
+    & a.active{
+       background-color: $standart-color;
+       color: #FFF;
+    }
+    & a.active:hover{
+       background-color: $active-color;
+    } 
     }
     & ul.dropdown {
-         background: #FFF;
+       background: #FFF;
 
        & li {
           display: block;
@@ -122,35 +129,6 @@ ul.navbar__menu {
      color: #FFFFFF;
      transition: all .5s ease-in;
  }
-
- /* Tabs */
-.tabs {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-.tabs__wrap {
-    display: $dsp;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0;
-    box-shadow: $bshd;
-}
-.tabs__item {
-    display: $dsp;
-    flex-direction: $fd;
-    justify-content: center;
-    align-items: center;
-    width: 85px;
-    height: 45px;
-    border-bottom: 3px solid $border-color;
-}
-.tabs__item_active {
-    border-color: $active-color;
-    color: $active-color;
-    background: $active-bg;
-}
 
 /* Sidenav  */
 .sidenav {

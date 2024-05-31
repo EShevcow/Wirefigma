@@ -10,7 +10,7 @@
 .navbar__toggle {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 80px;
   width: 100%;
   background: #FFF;
   text-align: center;
@@ -83,7 +83,7 @@ header h1 {
   font-size: 3em;
 }
 
-.index-section {
+.main-section {
   padding: 2em 0 2em 0;
 }
 
@@ -119,8 +119,8 @@ aside .sidenav__item:hover {
 
 .scroll-top {
   position: fixed;
-  right: 50px;
-  bottom: 80px;
+  right: 30px;
+  bottom: 30px;
   z-index: 10;
 }
 
@@ -186,7 +186,7 @@ footer .footer-copyright {
 }
 @media screen and (max-width: 540px) {
   .main {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
   aside .sidenav__item .text-label {
     display: inline-block;
@@ -201,7 +201,7 @@ footer .footer-copyright {
     padding: 0;
   }
   .code-toolbar {
-    max-width: 400px;
+    width: 70%;
   }
   .ads {
     display: block;

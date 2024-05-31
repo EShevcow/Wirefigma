@@ -62,9 +62,6 @@
                 <a href="grid.html">Grids</a>
             </li>
             <li>
-                <a href="#">Цвета</a>
-            </li>
-            <li>
                 <a href="linkscript.html">скрипты</a>
             </li> 
         </ul>
@@ -90,7 +87,14 @@
                     <i class="large material-icons">grid_on</i>     
                     <span class="text-label">Диалоговое окно</span>
                 </a>
-               
+                <a href="tabs.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Табы</span>
+                </a>
+                <a href="carousel.html" class="sidenav__item" data-tooltip="Tables">
+                    <i class="large material-icons">grid_on</i>     
+                    <span class="text-label">Карусель</span>
+                </a>
             </div>
         </div>  
         <div class="ads">
@@ -108,72 +112,61 @@
 <section>
     <h3>Dialog Modal</h3>
     <!-- Простой попап диалог с формой -->
-    <button class="btn primary modal-trigger">
+    <button class="btn primary modal-trigger" id="openModalBtn">
         <span class="body-bold">Open Dialog</span>
     </button> 
     
-    <div class="modal">
-    <div class="modal__overlay">
+<div class="modal" id="myModal">
+  <div class="modal__overlay">
     <div class="modal__wrap">
-    <div class="modal__body">
-    <h3>Hello</h3>
-    <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
-    at facere recusandae iure.
-    </p>
+      <div class="modal__body">
+         <h3>Hello</h3>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
+           at facere recusandae iure.
+          </p>
+        </div>
+      <div class="modal__footer">
+      <button class="btn primary modal-close">    
+       <span class="body-bold">Close</span>
+       <i class="icofont-close"></i>
+      </button>
     </div>
-    <div class="modal__footer">
-    <button class="btn primary modal-close">    
-    <span class="body-bold">Close</span>
-    <i class="material-icons">close</i>
-    </button>
-    </div>
-    </div>   
-    </div>
-    </div>
+   </div>   
+  </div>
+</div>
     
     <h3>Button Call dialog</h3>
-    <script type="text/plain" class="language-html">
-    <button class="btn primary modal-trigger">
-    <span class="body-bold">Open Dialog</span>
-    </button>  
-    </script>
-    <h3>Modal Dialog Window</h3>
 <script type="text/plain" class="language-html">
-    <div class="modal">
-    <div class="modal__overlay">
-    <div class="modal__wrap">
+ <button class="btn primary modal-trigger" id="openModalBtn">
+   <span class="body-bold">Open Dialog</span>
+ </button>  
+</script>
+<h3>Modal Dialog Window</h3>
+<script type="text/plain" class="language-html">
+ <div class="modal" id="myModal">
+  <div class="modal__overlay">
+   <div class="modal__wrap">
     <div class="modal__body">
-    <h3>Hello</h3>
-    <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
-    at facere recusandae iure.
-    </p>
+     <h3>Hello</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
+        at facere recusandae iure.
+      </p>
     </div>
     <div class="modal__footer">
-    <button class="btn primary modal-close">    
-    <span class="body-bold">Close</span>
-    <i class="material-icons">close</i>
-    </button>
+     <button class="btn primary modal-close">    
+       <span class="body-bold">Close</span>
+       <i class="icofont-close"></i>
+     </button>
     </div>
-    </div>   
-    </div>
-    </div>
+   </div>   
+  </div>
+ </div>  
 </script>
-    <h3>Scripts Modal</h3>
-    <script type="text/plain" class="language-js">
-    // Modal Open
-    $('.modal-trigger').click(function(){
-        $('.modal').slideToggle();
-    });
-    
-    // Close Modal
-    $('.modal-close').click(function() {
-        $('.modal').slideToggle();
-    });
-    </script>
+
 </section>
 
 </article>
@@ -233,11 +226,9 @@
         </span>
     </div> 
 </footer> 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="js/wirefigma.js"></script>
-    <script src="js/prism.js"></script>
+ <script src="js/jquery-3.6.4.js"></script>
+ <script src="js/script.js"></script>
+ <script src="js/wirefigma.js"></script>
+ <script src="js/prism.js"></script>
 </body>
 </html>
