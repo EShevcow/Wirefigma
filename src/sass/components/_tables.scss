@@ -4,6 +4,7 @@ tr{
     flex-direction: row;
     align-items: center;
     padding: 0;
+    color: $standart-color;
 }
 td, th{
     width: 100%;
@@ -16,7 +17,7 @@ td, th{
     line-height: $lh;
 }
 th{
-    color: $border-color;
+    color: $active-color;
     background: #FFFFFF;
 }
 .striped tr:nth-child(odd){

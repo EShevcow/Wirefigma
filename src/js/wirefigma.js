@@ -11,24 +11,19 @@ $(document).ready(function(){
   });
 
 /* Modal Window */
+document.addEventListener('DOMContentLoaded', function () {
+   var modal = document.getElementById("myModal");
+   var btn = document.getElementById("openModalBtn");
+   var span = document.getElementsByClassName("modal-close")[0];
+  
+   btn.onclick = function() {
+       modal.style.display = "block";
+   }
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModalBtn");
-var span = document.getElementsByClassName("modal-close")[0];
-
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-document.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+   span.onclick = function() {
+       modal.style.display = "none";
+   }
+});
 
  // Tabs
  document.addEventListener('DOMContentLoaded', function() {
