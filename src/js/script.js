@@ -41,5 +41,9 @@ $('.navbar__burger').click(function(){
   $('.navbar__toggle').slideToggle();
 });
 
+$('.navbar-burger').click(function(){
+  $('.navbar-toggle').slideToggle();
+});
+
 
 

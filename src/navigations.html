@@ -32,10 +32,10 @@
                 <a href="#" class="active">Компоненты</a>
             </li>
             <li>
-                <a href="grid.html">Сетка</a>
+                <a href="grid.html">CSS</a>
             </li>
             <li>
-                <a href="linkscript.html">скрипты</a>
+                <a href="linkscript.html">Javascript</a>
             </li>
             <li>
                 <a href="#">
@@ -104,6 +104,14 @@
                     <i class="large material-icons">contact_mail</i>    
                     <span class="text-label">Карточки</span>
                 </a>
+                <a href="footer.html" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Подвал страницы</span>
+                </a>
+                <a href="social.html" class="sidenav__item" data-tooltip="Cards">
+                    <i class="large material-icons">contact_mail</i>    
+                    <span class="text-label">Соцсети</span>
+                </a>
             </div>
         </div>  
         <div class="ads">
@@ -119,50 +127,65 @@
             </span>
         </header>
         <section>
-            <h3>Пример навбара</h3>
+            <h3>Адаптивный навбар для сайта</h3>
             <nav class="navbar"> 
             <div class="navbar__wrap">   
             <a href="#" class="brand-logo">logo</a>
             <ul class="navbar__menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Contact Us</a></li>
             </ul>
+            <ul class="navbar-toggle">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Contact Us</a></li>    
+            </ul>
+            <a class="navbar-burger" href="#">
+                <i class="large material-icons">dehaze</i>
+            </a>
             </div> 
             </nav> 
             
 <script type="text/plain" class="language-html">
-<nav class="navbar"> 
-    <div class="navbar__wrap">   
-    <a href="#" class="brand-logo">logo</a>
+ <nav class="navbar"> 
+  <div class="navbar__wrap">   
+   <a href="#" class="brand-logo">logo</a>
     <ul class="navbar__menu">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">About Us</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About Us</a></li>
+     <li><a href="#">Contact Us</a></li>
     </ul>
-    </div> 
-</nav> 
+    <ul class="navbar-toggle">
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About Us</a></li>
+     <li><a href="#">Contact Us</a></li> 
+    </ul>
+    <a class="navbar-burger" href="#">
+     <i class="large material-icons">dehaze</i>
+    </a>
+  </div> 
+ </nav> 
+
+</script>
+<blockquote>
+  Скрипт для открытия и закрытия адаптивного меню
+</blockquote>
+<script type="text/plain" class="language-js">
+    $('.navbar-burger').click(function(){
+        $('.navbar-toggle').slideToggle();
+    });
+
 </script>
 </section>
 <section>
    <h3>Навбар и выпадающий список</h3> 
    <ul class="navbar__menu">
+    <li><a href="#">Home</a></li>
     <li>
-        <a href="#">Home</a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="icofont-caret-down"></i>
-            Languages
-        </a>
+       <a href="#">
+          <i class="icofont-caret-down"></i>
+            Languages</a>
          <ul class="dropdown">
             <li>
                 <a href="#">Html</a>
@@ -210,7 +233,7 @@
     </script>
 </section>
 <section>
-    <h3>Breadcrumb column</h3>
+    <h3>Хлебные крошки в колонну</h3>
     <div class="breadcrumb">
         <div class="column">
             <a href="" class="breadcrumb__link">
@@ -236,10 +259,11 @@
             </a> 
         </div>
       </div>
+
 </script>   
 </section>
 <section>
-    <h3>Breadcrumb horisontal </h3>
+    <h3>Хлебные крошки в строку </h3>
     <div class="breadcrumb">
         <div class="breadcrumb__wrap">
             <a class="breadcrumb__link" href="#">
@@ -452,8 +476,7 @@
 </div>         
 </main>
 <footer>
-    <div class="row footer-content">
-
+    <div class="footer-content">
         <div class="column">
             <div class="row">
                 <span class="body-bold">
@@ -473,34 +496,42 @@
                 </a>
                 <span class="emoji text-body" title="Russia">🇷🇺</span>
             </div>
-        </div>
-        <div class="live-int">
-            <!--LiveInternet counter-->
-            <a href="https://www.liveinternet.ru/click"
-             class="tooltip-left" data-tooltip="Live Internet Statistic"
-            target="_blank">
-            <img id="licntF358" width="88" height="31" style="border:0" 
-
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
-            alt="LiveintImg"/>
-            </a>
-            <script>
-            (function(d,s){d.getElementById("licntF358").src=
-            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
-            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
-            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-            (document,screen)
-            </script>
-            <!--/LiveInternet-->
-        </div>
-    </div> 
+        </div> 
+      <ul class="social">
+        <li>
+          <a href="https://github.com/EShevcow/Wirefigma" target="_blank" class="social__link social__link_github" title="github">
+            <i class="icofont-github"></i>
+         </a>  
+        </li>
+      </ul>
+    </div>
     <div class="footer-copyright">
         <span class="text-micro">
-          &copy;  Edvard Shevcov Think Power 2023 - 2024
+            <i class="icofont-copyright"></i>
+            Edvard Shevcov Think Power 2024
         </span>
-    </div> 
-</footer> 
+       <div class="other-link">
+          <!--LiveInternet counter-->
+          <a href="https://www.liveinternet.ru/click"
+          class="tooltip-left" data-tooltip="Live Internet Statistic"
+         target="_blank">
+         <img id="licntF358" width="88" height="31" style="border:0" 
+
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+         alt="LiveintImg"/>
+         </a>
+         <script>
+         (function(d,s){d.getElementById("licntF358").src=
+         "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+         ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+         (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+         ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+         (document,screen)
+         </script>
+         <!--/LiveInternet-->
+       </div>
+    </div>
+ </footer>  
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/script.js"></script>
     <script src="js/prism.js"></script>
