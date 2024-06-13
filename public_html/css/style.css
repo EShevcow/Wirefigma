@@ -2,6 +2,11 @@
   background: #2F1160;
 }
 
+.wirenav {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
 .navbar__burger {
   padding-right: 1em;
   display: none;
@@ -97,17 +102,28 @@ article {
           flex-direction: column;
   gap: 50px;
 }
-article section {
-  display: inherit;
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  padding: 20px 50px 30px 50px;
+  padding: 2em 3em 3em 2em;
 }
 
-aside .sidenav__item .material-icons {
+.typography {
+  color: #2F1160;
+}
+
+.code-toolbar {
+  max-width: 650px;
+}
+
+aside .sidenav__item i {
   display: none;
 }
 aside .sidenav__item:hover {
@@ -134,10 +150,17 @@ aside .sidenav__item:hover {
   .main {
     grid-template-columns: 50px auto;
   }
+  aside .sidenav__item:hover i {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   aside .sidenav__item .text-label {
     display: none;
   }
-  aside .sidenav__item .material-icons {
+  aside .sidenav__item i {
     display: inline-block;
   }
   .wirenav .navbar__menu {
@@ -159,21 +182,22 @@ aside .sidenav__item:hover {
 @media screen and (max-width: 540px) {
   .main {
     grid-template-columns: auto;
+    padding: 0;
   }
   aside .sidenav__item .text-label {
     display: inline-block;
   }
-  aside .sidenav__item .material-icons {
+  aside .sidenav__item i {
     display: none;
   }
-  aside article {
+  article {
     gap: 30px;
   }
-  aside article section {
-    padding: 0;
+  section {
+    padding: 2em 0 2em 1em;
   }
   .code-toolbar {
-    width: 90%;
+    width: 400px;
   }
   .ads {
     display: block;

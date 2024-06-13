@@ -621,15 +621,15 @@ th {
   position: absolute;
   z-index: 10;
   color: #FFF;
-  background: rgba(47, 17, 96, 0.9);
+  background: rgba(47, 17, 96, 0.8);
   padding: 10px 20px;
   border-radius: 3px;
   white-space: nowrap;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: -45px;
-  left: 50%;
+  top: -50px;
+  left: 55%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -644,7 +644,7 @@ th {
   position: absolute;
   z-index: 10;
   color: #FFF;
-  background: rgba(47, 17, 96, 0.9);
+  background: rgba(47, 17, 96, 0.8);
   padding: 10px 20px;
   border-radius: 3px;
   white-space: nowrap;
@@ -652,7 +652,7 @@ th {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   top: 5px;
-  left: 55px;
+  left: 110%;
 }
 
 .tooltip-right:hover::after {
@@ -664,7 +664,7 @@ th {
   position: absolute;
   z-index: 10;
   color: #FFF;
-  background: rgba(47, 17, 96, 0.9);
+  background: rgba(47, 17, 96, 0.8);
   padding: 10px 20px;
   border-radius: 3px;
   white-space: nowrap;
@@ -684,14 +684,14 @@ th {
   position: absolute;
   z-index: 10;
   color: #FFF;
-  background: rgba(47, 17, 96, 0.9);
+  background: rgba(47, 17, 96, 0.8);
   padding: 10px 20px;
   border-radius: 3px;
   white-space: nowrap;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: 20px;
+  top: 30px;
   left: 0;
 }
 
@@ -699,6 +699,7 @@ th {
   opacity: 1;
 }
 
+/* Pills */
 .pill {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

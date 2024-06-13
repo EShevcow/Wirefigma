@@ -34,10 +34,10 @@
                 <a href="navigations.html">Компоненты</a>
             </li>
             <li>
-                <a href="grid.html">Сетка</a>
+                <a href="typography.html">css</a>
             </li>
             <li>
-                <a href="linkscript.html" class="active">скрипты</a>
+                <a href="linkscript.html" class="active">javascript</a>
             </li>
             <li>
                 <a href="#">
@@ -62,10 +62,10 @@
                 <a href="navigations.html">Компоненты</a>
             </li>
             <li>
-                <a href="grid.html">Grids</a>
+                <a href="typography.html">css</a>
             </li>
             <li>
-                <a href="linkscript.html">скрипты</a>
+                <a href="linkscript.html">javascript</a>
             </li> 
         </ul>
         <a class="navbar__burger" href="#">
@@ -78,24 +78,24 @@
     <aside class="column">
         <div class="sidenav">
             <div class="sidenav__wrap">
-                <a href="linkscript.html" class="sidenav__item" data-tooltip="Tables">
-                    <i class="large material-icons"></i>     
+                <a href="linkscript.html" class="sidenav__item" data-tooltip="Link Script">
+                    <i class="icofont-file-javascript"></i>
                     <span class="text-label">Подключение скриптов</span>
                 </a>
-                <a href="accordion.html" class="sidenav__item" data-tooltip="Navigation">
-                    <i class="large material-icons">navigation</i>     
+                <a href="accordion.html" class="sidenav__item" data-tooltip="Accordion">
+                    <i class="icofont-justify-all"></i>
                     <span class="text-label">Аккордион</span>
                 </a>
-                <a href="modal.html" class="sidenav__item" data-tooltip="Tables">
-                    <i class="large material-icons">grid_on</i>     
+                <a href="modal.html" class="sidenav__item" data-tooltip="Modal Window">
+                    <i class="icofont-drawing-tablet"></i>
                     <span class="text-label">Диалоговое окно</span>
                 </a>
-                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Tables">
-                    <i class="large material-icons">grid_on</i>     
+                <a href="tabs.html" class="sidenav__item sidenav__item_active" data-tooltip="Tabs">
+                    <i class="icofont-table"></i>
                     <span class="text-label">Табы</span>
                 </a>
-                <a href="carousel.html" class="sidenav__item" data-tooltip="Tables">
-                    <i class="large material-icons">grid_on</i>     
+                <a href="carousel.html" class="sidenav__item" data-tooltip="Carousel">
+                    <i class="icofont-multimedia"></i>
                     <span class="text-label">Карусель</span>
                 </a>
             </div>
@@ -219,8 +219,7 @@
 </div>         
 </main>
 <footer>
-    <div class="row footer-content">
-
+    <div class="footer-content">
         <div class="column">
             <div class="row">
                 <span class="body-bold">
@@ -240,34 +239,42 @@
                 </a>
                 <span class="emoji text-body" title="Russia">🇷🇺</span>
             </div>
-        </div>
-        <div class="live-int">
-            <!--LiveInternet counter-->
-            <a href="https://www.liveinternet.ru/click"
-             class="tooltip-left" data-tooltip="Live Internet Statistic"
-            target="_blank">
-            <img id="licntF358" width="88" height="31" style="border:0" 
-
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
-            alt="LiveintImg"/>
-            </a>
-            <script>
-            (function(d,s){d.getElementById("licntF358").src=
-            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
-            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
-            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-            (document,screen)
-            </script>
-            <!--/LiveInternet-->
-        </div>
-    </div> 
+        </div> 
+      <ul class="social">
+        <li>
+          <a href="https://github.com/EShevcow/Wirefigma" target="_blank" class="social__link social__link_github" title="github">
+            <i class="icofont-github"></i>
+         </a>  
+        </li>
+      </ul>
+    </div>
     <div class="footer-copyright">
         <span class="text-micro">
-          &copy;  Edvard Shevcov Think Power 2023 - 2024
+            <i class="icofont-copyright"></i>
+            Edvard Shevcov Think Power 2024
         </span>
-    </div> 
-</footer> 
+       <div class="other-link">
+          <!--LiveInternet counter-->
+          <a href="https://www.liveinternet.ru/click"
+          class="tooltip-left" data-tooltip="Live Internet Statistic"
+         target="_blank">
+         <img id="licntF358" width="88" height="31" style="border:0" 
+
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+         alt="LiveintImg"/>
+         </a>
+         <script>
+         (function(d,s){d.getElementById("licntF358").src=
+         "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+         ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+         (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+         ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+         (document,screen)
+         </script>
+         <!--/LiveInternet-->
+       </div>
+    </div>
+ </footer>  
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
 integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
 crossorigin="anonymous"></script>

@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Модальное окно wirefigma">
+    <meta name="description" content="Краткое описание страницы">
+    <meta
+    name="keywords"
+    content="ключевое слово 1, ключевое слово 2, ключевое слово 3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Modal Window</title>
+    <title>Wirefigma Template</title>
     <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="icofont/icofont.min.css">
     <style>
         header{
-            background-image: url(img/code-3337044.jpg);
+            background-image: url(img/tekstura-tekstury-stil.jpg);
         }
     </style>
 </head>
@@ -28,13 +31,13 @@
                 <a href="getstarted.html">Подключение</a>
             </li>
             <li>
-                <a href="navigations.html">Компоненты</a>
+                <a href="navigations.html" >Компоненты</a>
             </li>
             <li>
-                <a href="typography.html">css</a>
+                <a href="typography.html" class="active">CSS</a>
             </li>
             <li>
-                <a href="linkscript.html" class="active">javascript</a>
+                <a href="linkscript.html">javascript</a>
             </li>
             <li>
                 <a href="#">
@@ -59,14 +62,14 @@
                 <a href="navigations.html">Компоненты</a>
             </li>
             <li>
-                <a href="typography.html">css</a>
+                <a href="grid.html" class="active">CSS</a>
             </li>
             <li>
-                <a href="linkscript.html">javascript</a>
+                <a href="linkscript.html">Javsscript</a>
             </li> 
         </ul>
         <a class="navbar__burger" href="#">
-            <i class="large material-icons">dehaze</i>
+            <i class="icofont-navigation-menu"></i>
         </a>
         </div> 
 </nav> 
@@ -74,102 +77,118 @@
 <main class="main">   
     <aside class="column">
         <div class="sidenav">
-            <div class="sidenav__wrap">
-                <a href="linkscript.html" class="sidenav__item" data-tooltip="Link Script">
-                    <i class="icofont-file-javascript"></i>
-                    <span class="text-label">Подключение скриптов</span>
+            <div class="sidenav__wrap">    
+                <a href="#" class="sidenav__item sidenav__item_active" data-tooltip="Typography">
+                    <i class="icofont-font"></i>
+                    <span class="text-label">Typography</span>
                 </a>
-                <a href="accordion.html" class="sidenav__item" data-tooltip="Accordion">
-                    <i class="icofont-justify-all"></i>
-                    <span class="text-label">Аккордион</span>
+                <a href="#" class="sidenav__item" data-tooltip="Colors">
+                    <i class="icofont-paint"></i>
+                    <span class="text-label">Colors</span>
                 </a>
-                <a href="modal.html" class="sidenav__item sidenav__item_active" data-tooltip="Modal Window">
-                    <i class="icofont-drawing-tablet"></i>
-                    <span class="text-label">Диалоговое окно</span>
-                </a>
-                <a href="tabs.html" class="sidenav__item" data-tooltip="Tabs">
-                    <i class="icofont-table"></i>
-                    <span class="text-label">Табы</span>
-                </a>
-                <a href="carousel.html" class="sidenav__item" data-tooltip="Carousel">
-                    <i class="icofont-multimedia"></i>
-                    <span class="text-label">Карусель</span>
-                </a>
+                <a href="grids.html" class="sidenav__item" data-tooltip="Grids">  
+                    <i class="icofont-grid-advance"></i>
+                    <span class="text-label">Grids</span>
+                </a>  
             </div>
         </div>  
-        <div class="ads">
-           
-        </div>
-    </aside>  
-        
+<div class="ads">
+    
+</div>
+</aside>  
+
 <article>    
 <header>
-<h1>Java Script</h1>
-<span class="text-body">
-  Модальное окно
-</span>
+    <h1>Основные размеры текста</h1>
 </header>
-<section>
-    <h3>Dialog Modal</h3>
-    <!-- Простой попап диалог с формой -->
-    <button class="btn primary modal-trigger" id="openModalBtn">
-        <span class="body-bold">Open Dialog</span>
-    </button> 
-    
-<div class="modal" id="myModal">
-  <div class="modal__overlay">
-    <div class="modal__wrap">
-      <div class="modal__body">
-         <h3>Hello</h3>
-          <p>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-           Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
-           at facere recusandae iure.
-          </p>
-        </div>
-      <div class="modal__footer">
-      <button class="btn primary modal-close">    
-       <span class="body-bold">Close</span>
-       <i class="icofont-close"></i>
-      </button>
-    </div>
-   </div>   
-  </div>
-</div>
-    
-    <h3>Button Call dialog</h3>
+<section class="typography">
+<h3>Заголовки</h3>
+<span class="title-page">Huge</span>
+    <h1>Heading 1</h1>
+    <span class="subheading-first">
+        Subheading 1
+    </span>
+    <h2>Heading 2</h2>
+    <p class="subheading-second">
+        Subheading 2
+    </p>
+    <h3>Heading 3</h3>
+    <span class="subheading-third">
+    Subheading 3 
+    </span>
+    <h4>Heading 4</h4>
+    <span class="subheading-four">
+        Subheading 4
+    </span>         
+            
 <script type="text/plain" class="language-html">
- <button class="btn primary modal-trigger" id="openModalBtn">
-   <span class="body-bold">Open Dialog</span>
- </button>  
+    <span class="title-page">Huge</span>
+    <h1>Heading 1</h1>
+    <span class="subheading-first">
+        Subheading 1
+    </span>
+    <h2>Heading 2</h2>
+    <p class="subheading-second">
+        Subheading 2
+    </p>
+    <h3>Heading 3</h3>
+    <span class="subheading-third">
+    Subheading 3 
+    </span>
+    <h4>Heading 4</h4>
+    <span class="subheading-four">
+        Subheading 4
+    </span>
 </script>
-<h3>Modal Dialog Window</h3>
-<script type="text/plain" class="language-html">
- <div class="modal" id="myModal">
-  <div class="modal__overlay">
-   <div class="modal__wrap">
-    <div class="modal__body">
-     <h3>Hello</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quisquam exercitationem numquam laborum expedita quo reiciendis tempore, 
-        at facere recusandae iure.
-      </p>
-    </div>
-    <div class="modal__footer">
-     <button class="btn primary modal-close">    
-       <span class="body-bold">Close</span>
-       <i class="icofont-close"></i>
-     </button>
-    </div>
-   </div>   
-  </div>
- </div>  
-</script>
-
 </section>
-
-</article>
+<section class="typography">
+ 
+  <span class="body-text">
+    Body
+    </span>
+    <span class="text-body">
+    Text Body
+    </span>
+    <span class="body-bold">
+    Text Body Bold
+    </span>
+    <span class="text-small">
+    Text Small
+    </span>
+    <span class="small-bold">
+    Text Small Bold
+    </span>
+    <span class="text-micro">
+    Text Micro
+    </span>
+    <span class="micro-bold">
+    Text Micro Bold
+    </span>
+ <script type="text/plain" class="language-html">
+    <span class="body-text">
+    Body
+    </span>
+    <span class="text-body">
+    Text Body
+    </span>
+    <span class="body-bold">
+    Text Body Bold
+    </span>
+    <span class="text-small">
+    Text Small
+    </span>
+    <span class="small-bold">
+    Text Small Bold
+    </span>
+    <span class="text-micro">
+    Text Micro
+    </span>
+    <span class="micro-bold">
+    Text Micro Bold
+    </span>       
+ </script>     
+</section>   
+</article> 
 <div class="scroll-top" title="Вверх">
     <button class="btn-round round-primary">
         <i class="icofont-simple-up"></i>
@@ -233,9 +252,8 @@
        </div>
     </div>
  </footer>  
- <script src="js/jquery-3.6.4.js"></script>
- <script src="js/script.js"></script>
- <script src="js/wirefigma.js"></script>
- <script src="js/prism.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
 </body>
 </html>

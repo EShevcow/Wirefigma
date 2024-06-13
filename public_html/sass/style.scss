@@ -3,6 +3,9 @@
 .standart-color{
    background: $standart-color;
 }
+.wirenav{
+    box-shadow: $bshd;
+}
 .navbar__burger{
     padding-right: 1em;
     display: none;
@@ -75,16 +78,23 @@ article{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    & section{
-        display: inherit;
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px 50px 30px 50px;
-    }
+     
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2em 3em 3em 2em;
+}
+.typography{
+    color: $standart-color;
+}
+.code-toolbar{
+    max-width: 650px;
 }
 aside {
     & .sidenav__item{
-      & .material-icons{
+      & i{
         display: none;
       }
       &:hover{
@@ -112,15 +122,22 @@ aside {
         grid-template-columns: 50px auto;
     }
     aside {
-       & .sidenav__item {
-        & .text-label{
-            display: none;
-        }
-        & .material-icons{
-            display: inline-block;
-        }
-     }
-   }
+        & .sidenav__item {
+             &:hover{
+                & i{
+                transform: scale(1.5);
+                transition: all 0.5s;  
+                }  
+             }
+         & .text-label{
+             display: none;
+         }
+         & i{
+             display: inline-block;
+            
+         }
+      }
+    }
    .wirenav{
     & .navbar__menu{
         display: none;
@@ -143,27 +160,28 @@ aside {
 @media screen and (max-width: 540px) {
     .main{
         grid-template-columns: auto;
+        padding: 0;
     }
     aside {
         & .sidenav__item {
         & .text-label{
         display: inline-block;
         }
-        & .material-icons{
+        & i{
             display: none;
+        }
         }
     }
     article{
         gap: 30px;
-        & section{
-            padding: 0;
-        }
     }
-    
-}
-.code-toolbar{
-    width: 90%;
-}
+    section{
+        padding: 2em 0 2em 1em;
+      //align-items: center;
+    }
+   .code-toolbar{
+        width: 400px;
+    }
     .ads{
         display: block;
     }

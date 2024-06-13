@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Адаптивная сетка для сайта">
-    <meta name="keywords" content="Wirefigma grid">
+    <meta name="description" content="Краткое описание страницы">
+    <meta
+    name="keywords"
+    content="ключевое слово 1, ключевое слово 2, ключевое слово 3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wirefigma Grids</title>
+    <title>Wirefigma Template</title>
     <link rel="shortcut icon" href="img/Logomark.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wirefigma.css">
@@ -29,13 +31,13 @@
                 <a href="getstarted.html">Подключение</a>
             </li>
             <li>
-                <a href="navigations.html">Компоненты</a>
+                <a href="navigations.html" >Компоненты</a>
             </li>
             <li>
-                <a href="#" class="active">Сетка</a>
+                <a href="typography.html" class="active">CSS</a>
             </li>
             <li>
-                <a href="linkscript.html">скрипты</a>
+                <a href="linkscript.html">javascript</a>
             </li>
             <li>
                 <a href="#">
@@ -60,29 +62,46 @@
                 <a href="navigations.html">Компоненты</a>
             </li>
             <li>
-                <a href="grid.html">Grids</a>
+                <a href="grid.html" class="active">CSS</a>
             </li>
             <li>
-                <a href="#">Цвета</a>
-            </li>
-            <li>
-                <a href="linkscript.html">скрипты</a>
+                <a href="linkscript.html">Javsscript</a>
             </li> 
         </ul>
         <a class="navbar__burger" href="#">
-            <i class="large material-icons">dehaze</i>
+            <i class="icofont-navigation-menu"></i>
         </a>
         </div> 
 </nav> 
 
-<main class="main-index">   
-    <article>    
-        <header>
-            <h1>Адаптивная сетка Wirefigma</h1>
-            <span class="text-body">
-                Flex & Grid Layouts 
-            </span>
-        </header>
+<main class="main">   
+    <aside class="column">
+        <div class="sidenav">
+            <div class="sidenav__wrap">    
+                <a href="typography.html" class="sidenav__item" data-tooltip="Typography">
+                    <i class="icofont-font"></i>
+                    <span class="text-label">Typography</span>
+                </a>
+                <a href="#" class="sidenav__item" data-tooltip="Colors">
+                    <i class="icofont-paint"></i>
+                    <span class="text-label">Colors</span>
+                </a>
+                <a href="grids.html" class="sidenav__item sidenav__item_active" data-tooltip="Grids">  
+                    <i class="icofont-grid-advance"></i>
+                    <span class="text-label">Grids</span>
+                </a>  
+            </div>
+        </div>  
+<div class="ads">
+    
+</div>
+</aside>  
+
+<article>    
+<header>
+<h1>Адаптивная сетка Wirefigma</h1>
+<p>Flex & Grid Layouts</p>
+</header>
 <section>
 
     <h3>Flex Row</h3>
@@ -184,17 +203,16 @@
             </div>
          </div>  
     </script>     
-</section>
-</article>
+</section> 
+</article> 
 <div class="scroll-top" title="Вверх">
     <button class="btn-round round-primary">
         <i class="icofont-simple-up"></i>
     </button> 
-</div>          
+</div>         
 </main>
 <footer>
-    <div class="row footer-content">
-
+    <div class="footer-content">
         <div class="column">
             <div class="row">
                 <span class="body-bold">
@@ -214,34 +232,42 @@
                 </a>
                 <span class="emoji text-body" title="Russia">🇷🇺</span>
             </div>
-        </div>
-        <div class="live-int">
-            <!--LiveInternet counter-->
-            <a href="https://www.liveinternet.ru/click"
-             class="tooltip-left" data-tooltip="Live Internet Statistic"
-            target="_blank">
-            <img id="licntF358" width="88" height="31" style="border:0" 
-
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
-            alt="LiveintImg"/>
-            </a>
-            <script>
-            (function(d,s){d.getElementById("licntF358").src=
-            "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
-            ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
-            (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-            ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-            (document,screen)
-            </script>
-            <!--/LiveInternet-->
-        </div>
-    </div> 
+        </div> 
+      <ul class="social">
+        <li>
+          <a href="https://github.com/EShevcow/Wirefigma" target="_blank" class="social__link social__link_github" title="github">
+            <i class="icofont-github"></i>
+         </a>  
+        </li>
+      </ul>
+    </div>
     <div class="footer-copyright">
         <span class="text-micro">
-          &copy;  Edvard Shevcov Think Power 2023 - 2024
+            <i class="icofont-copyright"></i>
+            Edvard Shevcov Think Power 2024
         </span>
-    </div> 
-</footer> 
+       <div class="other-link">
+          <!--LiveInternet counter-->
+          <a href="https://www.liveinternet.ru/click"
+          class="tooltip-left" data-tooltip="Live Internet Statistic"
+         target="_blank">
+         <img id="licntF358" width="88" height="31" style="border:0" 
+
+         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+         alt="LiveintImg"/>
+         </a>
+         <script>
+         (function(d,s){d.getElementById("licntF358").src=
+         "https://counter.yadro.ru/hit?t18.9;r"+escape(d.referrer)+
+         ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+         (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+         ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+         (document,screen)
+         </script>
+         <!--/LiveInternet-->
+       </div>
+    </div>
+ </footer>  
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/script.js"></script>
     <script src="js/prism.js"></script>
