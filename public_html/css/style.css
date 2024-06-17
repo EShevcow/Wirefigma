@@ -146,6 +146,12 @@ aside .sidenav__item:hover {
   background: #2F1160;
 }
 
+.parallax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 @media screen and (max-width: 960px) {
   .main {
     grid-template-columns: 50px auto;

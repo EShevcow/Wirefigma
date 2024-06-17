@@ -35,6 +35,9 @@ ul.navbar__menu {
        z-index: 9;
        display: none;
        transition: all 0.3s;
+       & li{
+        margin: 0;
+       }
     }
     & a:hover{
        background: $standart-color;

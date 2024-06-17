@@ -117,6 +117,11 @@ aside {
     width: 100%;
     background: $standart-color;
 }
+.parallax{
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
 @media screen and (max-width: 960px){
     .main{
         grid-template-columns: 50px auto;

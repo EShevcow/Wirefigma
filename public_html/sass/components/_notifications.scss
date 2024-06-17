@@ -110,9 +110,11 @@ blockquote{
 .callout{
     width: 30px;
     height: 30px;
-    @include annot;
     display: $dsp;
     flex-direction: $fd;
+    background: $standart-color;
+    color: #FFF;
+    text-align: center;
     justify-content: space-around;
     border-radius: 999px;
 }
