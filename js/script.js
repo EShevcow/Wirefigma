@@ -26,10 +26,12 @@ setInterval(function(){
   let w = window.innerWidth;
   if (w < 960 && w > 540) {
     $('aside .sidenav__item').addClass('tooltip-right');
+
   }
   else if(w > 960){
     $('.navbar__toggle').slideUp();
     $('aside .sidenav__item').removeClass('tooltip-right');
+
   }
   else{
     $('aside .sidenav__item').removeClass('tooltip-right'); 

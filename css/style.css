@@ -169,6 +169,9 @@ aside .sidenav__item:hover {
   aside .sidenav__item i {
     display: inline-block;
   }
+  aside .sidenav__item .ads {
+    display: none;
+  }
   .wirenav .navbar__menu {
     display: none;
   }
