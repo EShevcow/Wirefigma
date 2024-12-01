@@ -22,6 +22,11 @@
     <!-- Yandex.RTB -->
    <script>window.yaContextCb=window.yaContextCb||[]</script>
    <script src="https://yandex.ru/ads/system/context.js" async></script>
+   <!-- Put this script tag to the <head> of your page -->
+   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+   <script type="text/javascript">
+       VK.init({ apiId: 52783741, onlyWidgets: true });
+   </script>
 </head>
 <body>
 <nav class="wirenav navbar"> 
@@ -208,6 +213,13 @@ window.yaContextCb.push(() => {
             <!--Your Content 4-->
         </div>
     </script>  
+</section>
+<section class="vk-vidget">
+    <!-- Put this div tag to the place, where the Comments block will be -->
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+      VK.Widgets.Comments("vk_comments", {limit: 5, attach: "#f5f5f5"});
+    </script>
 </section>
 <section class="ads-middle">
     <!-- Yandex.RTB R-A-4130138-4 -->

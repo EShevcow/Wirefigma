@@ -88,6 +88,10 @@ header h1 {
   font-size: 3em;
 }
 
+.image-doc img {
+  width: auto;
+}
+
 .main-section {
   padding: 2em 0 2em 0;
 }
