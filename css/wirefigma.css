@@ -722,6 +722,7 @@ th {
 
 blockquote {
   padding: 15px 0 15px 10px;
+  margin-right: 1em;
   border-left: 5px solid #6200ff;
   background: #EBE9F0;
 }

@@ -1,5 +1,8 @@
 @import "components/variables.scss";
 
+html{
+   overflow-x: none;
+}
 .standart-color{
    background: $standart-color;
 }
@@ -68,6 +71,8 @@ header{
     & h1{
         text-transform: uppercase;
         font-size: 3em;
+        padding: 1.2em;
+        color: $standart-color;
     }
 }
 .image-doc img{
@@ -92,7 +97,8 @@ section{
     color: $standart-color;
 }
 .code-toolbar{
-    max-width: 650px;
+    width: auto;
+  //  margin: 1em;
 }
 aside {
     & .sidenav__item{
@@ -162,6 +168,17 @@ aside {
    .code-toolbar{
     max-width: 500px;
     }
+    .index-header{
+       
+        & h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2em;
+            padding: 2em;
+            color: $standart-color;
+           
+        }
+    }
     .ads{
         display: none;
     }
@@ -192,7 +209,21 @@ aside {
    .code-toolbar{
         width: 400px;
     }
-    .ads{
-        display: block;
+    .index-header{
+       
+        & h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 2em;
+            color: $standart-color;
+           
+        }
     }
+    .ads, .ads-middle{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+   
 }

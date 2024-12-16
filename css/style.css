@@ -1,3 +1,7 @@
+html {
+  overflow-x: none;
+}
+
 .standart-color {
   background: #2F1160;
 }
@@ -86,6 +90,8 @@ header h1 {
 .index-header h1 {
   text-transform: uppercase;
   font-size: 3em;
+  padding: 1.2em;
+  color: #2F1160;
 }
 
 .image-doc img {
@@ -124,7 +130,7 @@ section {
 }
 
 .code-toolbar {
-  max-width: 650px;
+  width: auto;
 }
 
 aside .sidenav__item i {
@@ -188,6 +194,13 @@ aside .sidenav__item:hover {
   .code-toolbar {
     max-width: 500px;
   }
+  .index-header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+    color: #2F1160;
+  }
   .ads {
     display: none;
   }
@@ -212,7 +225,21 @@ aside .sidenav__item:hover {
   .code-toolbar {
     width: 400px;
   }
-  .ads {
-    display: block;
+  .index-header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2em;
+    color: #2F1160;
+  }
+  .ads, .ads-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 500px;
   }
 }
