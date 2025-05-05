@@ -12,15 +12,6 @@ $(document).on("click", ".scroll-top", function(e){
   $('body, html').animate({scrollTop: 0}, 1000);
 });
 
-/* Animate Logo
-$(document).ready(function(){
-  $('.home .brandlogo img').css("transform","skew(0deg)");
-  $('.boots').css("transform","translateX(0px)");
-  $('.dont').css("transform","translateX(0px)");
-  $('.index .btn').css("transform","translateY(0px)");
-});
-*/
-
 // Add Or Remove Tooltips
 setInterval(function(){
   let w = window.innerWidth;
@@ -47,5 +38,8 @@ $('.navbar-burger').click(function(){
   $('.navbar-toggle').slideToggle();
 });
 
-
-
+$(document).ready(function(){
+  $('.boots').css("transform","translateX(0px)");
+  $('.dont').css("transform","translateX(0px)");
+  $('.index-header .btn').css("transform","translateY(0px)");
+});

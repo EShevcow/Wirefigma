@@ -1520,7 +1520,7 @@ input[type=checkbox].standart__check:disabled:before {
           box-sizing: border-box;
   width: 50px;
   height: 30px;
-  border: 3px solid currentColor;
+  border: 3px solid #2F1160;
   border-radius: 99px;
   background: #FFFFFF;
   -webkit-transition: 0.2s;
@@ -1558,13 +1558,16 @@ input[type=checkbox].standart__check:disabled:before {
 }
 
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
-  background: lavender;
+  background: #2F1160;
 }
 
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
   -webkit-transform: translateX(20px);
       -ms-transform: translateX(20px);
           transform: translateX(20px);
+  background: #FFFFFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* Disabled */

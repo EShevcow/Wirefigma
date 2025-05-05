@@ -284,7 +284,7 @@ input[type=checkbox].standart__check:disabled:before {
 	box-sizing: border-box;			
 	width: 50px;	
 	height: 30px;
-	border: 3px solid currentColor;
+	border: 3px solid $standart-color;
 	border-radius: 99px;	
 	background: #FFFFFF;
 	transition: .2s;
@@ -314,10 +314,12 @@ input[type=checkbox].standart__check:disabled:before {
 	box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
 }
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
-	background: lavender;
+	background: $standart-color;
 }
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
 	transform:translateX(20px);
+    background: #FFFFFF;
+    box-shadow: none;
 }
 /* Disabled */
 input[type=checkbox]:disabled + .checkbox-ios-switch {

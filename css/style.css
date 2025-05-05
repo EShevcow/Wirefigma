@@ -72,7 +72,6 @@ header h1 {
 }
 
 .index-header {
-  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,12 +85,40 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 100px;
 }
 .index-header h1 {
   text-transform: uppercase;
   font-size: 3em;
   padding: 1.2em;
   color: #2F1160;
+}
+
+.boots {
+  display: inline-block;
+  -webkit-transform: translateX(-1200px);
+      -ms-transform: translateX(-1200px);
+          transform: translateX(-1200px);
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+.dont {
+  display: inline-block;
+  -webkit-transform: translateX(1200px);
+      -ms-transform: translateX(1200px);
+          transform: translateX(1200px);
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+.index-header .btn {
+  max-width: 250px;
+  -webkit-transform: translateY(1200px);
+      -ms-transform: translateY(1200px);
+          transform: translateY(1200px);
+  -webkit-transition: all 1.4s;
+  transition: all 1.4s;
 }
 
 .image-doc img {
@@ -193,6 +220,9 @@ aside .sidenav__item:hover {
   }
   .code-toolbar {
     max-width: 500px;
+  }
+  .index-header {
+    height: 70vh;
   }
   .index-header h1 {
     text-transform: uppercase;
